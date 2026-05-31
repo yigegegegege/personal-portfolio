@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 · TOM XIE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    .about-grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px 80px;
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 900px) {
+      .about-grid { grid-template-columns: 1fr 1fr; }
+      .about-card--wide { grid-column: 1 / -1; }
+    }
+    .about-card {
+      background: var(--bg-elevated);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+    }
+    .about-card h2 {
+      font-family: "Syne", sans-serif;
+      font-size: 18px;
+      color: var(--accent-a);
+      margin-bottom: 16px;
+    }
+    .about-card p,
+    .about-card li {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .about-card ul { padding-left: 18px; }
+    .about-card a { color: var(--accent-b); }
+    .info-row { margin-bottom: 10px; }
+    .info-row strong {
+      display: block;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      color: var(--text);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    .exp-item {
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .exp-item:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+    .exp-item h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .exp-item .meta {
+      font-size: 12px;
+      color: var(--accent-b);
+      margin-bottom: 8px;
+    }
+    .exp-item p {
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .skills-card h2 { margin-bottom: 20px; }
+    .skill-group {
+      margin-bottom: 22px;
+    }
+    .skill-group:last-child { margin-bottom: 0; }
+    .skill-group__head {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .skill-group__title {
+      font-family: "Syne", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.04em;
+    }
+    .skill-group__sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .skill-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .skill-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: transform 0.3s var(--ease-out), border-color 0.3s;
+    }
+    .skill-icon:hover {
+      transform: translateY(-3px);
+      border-color: rgba(201, 169, 98, 0.35);
+    }
+    .skill-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .skill-icon span {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+    }
+    @media (min-width: 900px) {
+      .about-card--skills { grid-row: span 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <nav class="site-nav scrolled">
+    <div class="inner">
+      <a class="brand" href="../index.html">TOM XIE</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#section-about">关于</a></li>
+        <li><a href="../index.html#section-product">产品渲染</a></li>
+        <li><a href="../index.html#section-ip">IP设计</a></li>
+        <li><a href="../index.html#section-scene">场景渲染</a></li>
+        <li><a href="../index.html#section-poster">品牌平面</a></li>
+        <li><a href="../index.html#section-other">其他作品</a></li>
+        <li><a href="../index.html#section-contact">联系</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="work-hero">
+    <a class="back" href="../index.html#section-about">← 返回首页</a>
+    <p class="label">01 · About</p>
+    <h1>关于我</h1>
+    <p>谢意 — 品牌设计师 · IP 设计师 · 3D 设计师</p>
+  </header>
+  <div class="about-grid">
+    <article class="about-card">
+      <h2>基本信息</h2>
+      <div class="info-row">
+        <strong>教育经历</strong>
+        <p>武汉理工大学 · 计算机科学与技术 · 本科（2021.03 — 2023.06）<br />中原工学院 · 软件技术 · 大专（2017.09 — 2019.06）</p>
+      </div>
+      <div class="info-row">
+        <strong>现住址</strong>
+        <p>深圳市宝安区</p>
+      </div>
+      <div class="info-row">
+        <strong>联系方式</strong>
+        <p>
+          <a href="tel:+8615899782952">+86 158 9978 2952</a><br />
+          <a href="mailto:623797004@qq.com">623797004@qq.com</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="about-card about-card--skills skills-card">
+      <h2>能力</h2>
+      <div class="skill-group">
+        <div class="skill-group__head">
+          <span class="skill-group__title">设计软件</span>
+          <span class="skill-group__sub">Design</span>
+        </div>
+        <div class="skill-icons">
+          <div class="skill-icon" title="Adobe Photoshop"><img src="../assets/skills/ps.png" alt="Photoshop" loading="lazy" /></div>
+          <div class="skill-icon" title="Adobe Illustrator"><img src="../assets/skills/ai.png" alt="Illustrator" loading="lazy" /></div>
+          <div class="skill-icon" title="Adobe InDesign"><img src="../assets/skills/id.png" alt="InDesign" loading="lazy" /></div>
+          <div class="skill-icon" title="Procreate"><img src="../assets/skills/procreate.png" alt="Procreate" loading="lazy" /></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group__head">
+          <span class="skill-group__title">剪辑软件</span>
+          <span class="skill-group__sub">Editing</span>
+        </div>
+        <div class="skill-icons">
+          <div class="skill-icon" title="Adobe After Effects"><img src="../assets/skills/ae.png" alt="After Effects" loading="lazy" /></div>
+          <div class="skill-icon" title="Adobe Premiere Pro"><img src="../assets/skills/pr.png" alt="Premiere Pro" loading="lazy" /></div>
+          <div class="skill-icon" title="剪映 CapCut"><img src="../assets/skills/capcut.png" alt="CapCut" loading="lazy" /></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group__head">
+          <span class="skill-group__title">建模软件</span>
+          <span class="skill-group__sub">3D</span>
+        </div>
+        <div class="skill-icons">
+          <div class="skill-icon" title="Blender"><img src="../assets/skills/blender.png" alt="Blender" loading="lazy" /></div>
+          <div class="skill-icon" title="Cinema 4D"><img src="../assets/skills/c4d.png" alt="Cinema 4D" loading="lazy" /></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group__head">
+          <span class="skill-group__title">AI 软件</span>
+          <span class="skill-group__sub">AI</span>
+        </div>
+        <div class="skill-icons">
+          <div class="skill-icon" title="Midjourney"><img src="../assets/skills/midjourney.png" alt="Midjourney" loading="lazy" /></div>
+          <div class="skill-icon" title="ChatGPT"><img src="../assets/skills/chatgpt.png" alt="ChatGPT" loading="lazy" /></div>
+          <div class="skill-icon" title="即梦"><img src="../assets/skills/jimeng.png" alt="即梦" loading="lazy" /></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="about-card about-card--wide">
+      <h2>工作经历</h2>
+      <div class="exp-item">
+        <h3>深圳蓝普视讯科技有限公司 · 品牌视觉设计</h3>
+        <p class="meta">2021.06 — 2026.05</p>
+        <p>主导公司及子公司 VIS 规划与迭代，统一 Logo、标准色（#0066FF）、标准字及组合规范；从零参与品牌 IP「小蓝猫 / XIAOLANMAO」创意与定稿及全场景应用。负责官网视觉策略、CMS 内容运营与 2022 全站重构、2025 视觉更新；负责亚马逊、阿里国际站核心视觉体系。运用 C4D / Blender 完成产品高精度渲染及指挥中心、会议、演播室、商业展示、交通、xR 等场景可视化；策划社媒视觉，主导画册、展会与 INFOCOMM、ISE、中东 SLS、LDI SHOW 等主题视觉与展位效果图；搭建 AIGC 生图工作流，批量产出场景营销图与周边示意。2021 年获优秀员工奖。</p>
+      </div>
+      <div class="exp-item">
+        <h3>深圳水晶石教育 · 影视后期与三维设计</h3>
+        <p class="meta">2021.03 — 2021.06</p>
+        <p>独立完成 MG 动画、宣传片、CG 影片的剪辑、特效合成、配音、校色及成片包装；负责 CAD 产品建模、场景搭建、镜头动画、灯光材质与渲染，支撑产品 DEMO 与宣传短片。代表项目：《MIX FOLD》产品宣传短片；《About Korean》MG 动画指定场景动效。</p>
+      </div>
+      <div class="exp-item">
+        <h3>富甲一方装饰工程有限公司 · 平面设计</h3>
+        <p class="meta">2020.10 — 2021.02</p>
+        <p>负责官网活动 Banner、海报、印刷物料、活动长图及朋友圈等线上线下视觉；策划营销活动视觉，剪辑宣传/活动视频，运营抖音与微信公众号。</p>
+      </div>
+      <div class="exp-item">
+        <h3>贝百教育科技有限公司 · 品牌设计</h3>
+        <p class="meta">2020.07 — 2020.09</p>
+        <p>负责品牌视觉定义与规范制定，独立完成画册、折页、易拉宝、宣传单及周边物料设计与制作。</p>
+      </div>
+      <div class="exp-item">
+        <h3>神农牡丹集团 · 电商视觉设计</h3>
+        <p class="meta">2020.04 — 2020.07</p>
+        <p>主导淘宝店铺视觉升级：主图矩阵、详情页与品牌故事页、移动端界面及活动 Banner；独立完成宣传画册、产品介绍画册排版；参与节目剧照后期与品牌露出优化。</p>
+      </div>
+      <div class="exp-item">
+        <h3>十方心理有限公司（实习）· UI/UX 设计师</h3>
+        <p class="meta">2018.11 — 2019.12</p>
+        <p>主导《有爱心理》APP 全平台 UI/UX：用户流程、线框原型、界面视觉与交互优化；负责官网、营销 Banner、专题页、H5 及品牌图标体系；统筹画册、折页、易拉宝等营销物料。</p>
+      </div>
+    </article>
+
+    <article class="about-card about-card--wide">
+      <h2>项目经历</h2>
+      <div class="exp-item">
+        <h3>LPDISPLAY 品牌 VI 升级与 IP（小蓝猫）体系构建</h3>
+        <p class="meta">2022.04 — 2022.07（VI 持续迭代至今）</p>
+        <p>主导 Logo 升级多方案比选与定稿；独立完成 VI 基础系统及应用系统（名片、工牌、办公导视等）。创意并推进「小蓝猫」方案被采纳为核心品牌资产；主导产品画册、案例画册、产品彩页等核心宣传物料改版。建立可复用的品牌视觉与 IP 应用基础，支撑官网、展会、电商及内容运营统一输出。</p>
+      </div>
+      <div class="exp-item">
+        <h3>LPDISPLAY 官网视觉升级与 CMS 内容体系重构</h3>
+        <p class="meta">2022.04 — 2026.04（持续运维至今）</p>
+        <p>主导官网视觉风格定位，完成全站风格优化与关键页面定稿；合作完成约 80% 全站视觉素材交付并协同开发上线。独立操作 CMS，重构公司介绍、产品中心、解决方案、项目案例库等栏目。新版官网上线后反馈良好，有效支撑品牌形象与业务展示。</p>
+      </div>
+      <div class="exp-item">
+        <h3>国际行业展会主题视觉与展位设计</h3>
+        <p class="meta">2022.06 — 2026.01</p>
+        <p>参与 ISE（2024—2026）、INFOCOMM（2023—2025）、中东 SLS 展（2025—2026）、沃顿联展等方案视觉与效果图输出；负责展位结构视觉、主屏/吊屏版式、产品墙与技术参数墙排版。多套方案投入现场搭建参考，支撑海外市场拓展与品牌曝光。</p>
+      </div>
+      <div class="exp-item">
+        <h3>LED 产品 3D 渲染与解决方案场景可视化</h3>
+        <p class="meta">2022 — 2026</p>
+        <p>完成室内外 LED 产品高精度材质灯光调试与渲染，用于画册、官网与销售提案。搭建指挥中心、演播室、会议、商业零售、交通显示、xR 虚拟拍摄等应用场景 3D/写实渲染图；探索户外裸眼 3D 大屏创意构图并将品牌 IP 融入屏显内容。形成可复用场景图库，缩短销售与市场物料制作周期。</p>
+      </div>
+      <div class="exp-item">
+        <h3>品牌 IP · AIGC 视觉资产工作流建设</h3>
+        <p class="meta">2025.05 — 2026.04</p>
+        <p>在保持小蓝猫官方外形与品牌色前提下，建立可复用 Prompt 模板与命名规范，完成多批次实验并归档。配合 Photoshop 终稿微调与合规检查，形成「设计规范 → Prompt 模板 → 生成 → 品牌审稿」闭环，为营销提案、自媒体与周边创意提供快速视觉草案。</p>
+      </div>
+      <div class="exp-item">
+        <h3>《有爱心理》APP 与品牌数字触点（十方心理）</h3>
+        <p class="meta">2019.06 — 2019.12</p>
+        <p>主导 APP 整体 UI 风格、主色方案、核心 Icon 及设计规范；完成 Android 全平台界面与核心交互流程；参与官网信息架构与视觉风格，负责设计协调及上线后页面维护优化。</p>
+      </div>
+      <div class="exp-item">
+        <h3>《MIX FOLD》产品宣传短片制作</h3>
+        <p class="meta">2021.04 — 2021.05</p>
+        <p>负责产品模型制作及部分场景 3D 搭建；独立完成指定场景镜头设计、动画、关键帧、材质贴图、灯光布局与最终渲染输出。</p>
+      </div>
+      <div class="exp-item">
+        <h3>《About Korean》MG 动画制作</h3>
+        <p class="meta">2021.03 — 2021.04</p>
+        <p>收集整理图形、音频及参考素材；协作完成多场景原画与分镜；负责分配场景的 MG 动效、转场与节奏实现。</p>
+      </div>
+    </article>
+  </div>
+  <footer class="site-footer"><p><a href="../index.html">← 返回作品集首页</a></p></footer>
+  <script src="../js/app.js"></script>
+</body>
+</html>
