@@ -3,162 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TOM XIE — 品牌与产品视觉设计师个人作品集" />
-  <title>TOM XIE · 个人作品集</title>
+  <meta name="description" content="谢意 TOM XIE — 视觉设计师作品集：新品上市主 KV、跨境电商详情、品牌 VIS、IP 规范与 AIGC 工作流" />
+  <meta property="og:title" content="谢意 · 视觉设计师作品集" />
+  <meta property="og:description" content="品牌与产品视觉 · 跨境电商 · AIGC 审稿工作流 · 深圳" />
+  <meta property="og:image" content="assets/hero/hero-bg.jpg" />
+  <meta property="og:url" content="https://personal-portfolio-two-pi-54.vercel.app/" />
+  <title>谢意 TOM XIE · 视觉设计师作品集</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="is-loading">
-  <div class="cursor-glow" aria-hidden="true"></div>
+<body class="is-loading page-home">
   <nav class="site-nav">
     <div class="inner">
-      <a class="brand" href="index.html">TOM XIE</a>
+      <a class="brand" href="index.html">谢意 · TOM XIE</a>
       <ul class="nav-links">
+        <li><a href="#section-poster" data-section="poster">品牌视觉</a></li>
+        <li><a href="#section-product" data-section="product">产品视觉</a></li>
+        <li><a href="#section-ip" data-section="ip">IP 设计</a></li>
+        <li><a href="#section-aigc" data-section="aigc">AIGC</a></li>
+        <li><a href="#section-scene" data-section="scene">场景 3D</a></li>
         <li><a href="#section-about" data-section="about">关于</a></li>
-        <li><a href="#section-product" data-section="product">产品渲染</a></li>
-        <li><a href="#section-ip" data-section="ip">IP设计</a></li>
-        <li><a href="#section-scene" data-section="scene">场景渲染</a></li>
-        <li><a href="#section-poster" data-section="poster">品牌平面</a></li>
-        <li><a href="#section-other" data-section="other">其他作品</a></li>
-        <li><a href="#section-contact" data-section="contact">联系</a></li>
       </ul>
+      <div class="nav-actions">
+        <button type="button" class="nav-contact-btn" id="nav-contact-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="nav-contact-menu">联系</button>
+        <div class="nav-contact-menu" id="nav-contact-menu" role="menu" hidden>
+          <p class="nav-contact-menu__lead">欢迎视觉设计相关合作，通常 24 小时内回复。</p>
+          <a class="nav-contact-menu__item" href="tel:+8615899782952" role="menuitem">
+            <span class="nav-contact-menu__label">电话 / 微信</span>
+            <span class="nav-contact-menu__value">+86 158 9978 2952</span>
+          </a>
+          <a class="nav-contact-menu__item" href="mailto:623797004@qq.com" role="menuitem">
+            <span class="nav-contact-menu__label">邮箱</span>
+            <span class="nav-contact-menu__value">623797004@qq.com</span>
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
-  <aside class="scroll-progress">
-    <a href="#section-about" data-section="about"><span>01 关于</span></a>
-    <a href="#section-product" data-section="product"><span>02 产品渲染</span></a>
-    <a href="#section-ip" data-section="ip"><span>03 IP设计</span></a>
-    <a href="#section-scene" data-section="scene"><span>04 场景渲染</span></a>
-    <a href="#section-poster" data-section="poster"><span>05 品牌平面</span></a>
-    <a href="#section-other" data-section="other"><span>06 其他作品</span></a>
-    <a href="#section-contact" data-section="contact"><span>07 联系</span></a>
-  </aside>
+
   <header class="hero" id="top">
-    <div class="hero-media"><img src="assets/hero/hero-bg.jpg" alt="" /></div>
+    <div class="hero-media hero-media--carousel" aria-hidden="true">
+      <div class="hero-carousel" data-interval="5000">
+        <div class="hero-carousel__slide is-active">
+          <img src="assets/hero/hero-slide-01.jpg" alt="" width="1024" height="682" decoding="async" fetchpriority="high" />
+        </div>
+        <div class="hero-carousel__slide">
+          <img src="assets/hero/hero-slide-02.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" />
+        </div>
+        <div class="hero-carousel__slide">
+          <img src="assets/hero/hero-slide-03.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" />
+        </div>
+        <div class="hero-carousel__slide">
+          <img src="assets/hero/hero-slide-04.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Visual Design 2026</p>
-      <h1>TOM XIE<br />个人作品集</h1>
-      <p class="hero-desc">品牌设计师 · IP 设计师 · 3D视觉设计师</p>
-      <a class="hero-cta" href="#section-about">探索我的作品 <span class="arrow">↓</span></a>
+      <p class="hero-eyebrow">视觉设计师 · 品牌视觉 / 新品上市 · 深圳</p>
+      <h1>品牌与产品<em>视觉</em></h1>
+      <p class="hero-desc">主 KV · 跨境电商详情 · VIS 与 IP · AIGC 审稿工作流</p>
+      <div class="hero-actions">
+        <a class="hero-btn" href="#section-poster">浏览作品</a>
+        <a class="hero-link" href="works/about.html">关于我</a>
+      </div>
     </div>
   </header>
-  <main class="works-index">
-    <article class="panel" id="section-about" data-section="about">
-      <div class="panel-bg"><img src="assets/about/section-about-bg.png" alt="" loading="lazy" /></div>
-      <div class="panel-scrim"></div>
-      <div class="panel-inner">
-        <div class="panel-copy">
-          <div class="panel-num">01</div>
-          <h2>关于 TOM</h2>
-          <p>拥有 5 年+ 全链路品牌视觉设计经验，擅长从 0 到 1 构建品牌视觉识别系统（VI）、打造高辨识度 IP 形象及落地商业化应用。精通 3D 渲染与场景搭建，具备 MG/CG 与 UI/UX 能力。</p>
-          <div class="panel-tags"><span>品牌视觉</span><span>IP设计</span><span>3D视觉</span></div>
-          <a class="panel-link" href="works/about.html">查看详细 →</a>
-        </div>
-        <a class="panel-link-wrap" href="works/about.html"><div class="panel-preview panel-preview--about"><img src="assets/about/section-about-preview.png" alt="IP 形象展示" loading="lazy" /></div></a>
-      </div>
-    </article>
-    <article class="panel" id="section-product" data-section="product">
-      <div class="panel-bg"><img src="assets/product/section-product-bg.png" alt="" loading="lazy" /></div>
-      <div class="panel-scrim"></div>
-      <div class="panel-inner">
-        <div class="panel-copy">
-          <div class="panel-num">02</div>
-          <h2>产品渲染</h2>
-          <p>室内外 LED 高精度材质灯光渲染，用于画册、官网与销售提案；涵盖亚马逊、阿里国际站主图与详情页视觉体系。</p>
-          <div class="panel-tags"><span>产品</span><span>渲染</span></div>
-          <a class="panel-link" href="works/product.html">进入作品 →</a>
-        </div>
-        <a class="panel-link-wrap" href="works/product.html"><div class="panel-preview"><img src="assets/product/section-product-preview.png" alt="LED 模组产品渲染" loading="lazy" /></div></a>
-      </div>
-    </article>
-    <article class="panel" id="section-ip" data-section="ip">
-      <div class="panel-bg"><img src="assets/ip/section-ip-bg.png" alt="" loading="lazy" /></div>
-      <div class="panel-scrim"></div>
-      <div class="panel-inner">
-        <div class="panel-copy">
-          <div class="panel-num">03</div>
-          <h2>IP设计</h2>
-          <p>主导「小蓝猫 / XIAOLANMAO」IP 定稿与应用规范，落地画册、展会、3D 屏显与营销周边；探索 AIGC 场景与周边示意工作流。</p>
-          <div class="panel-tags"><span>IP</span><span>AI</span><span>周边</span></div>
-          <a class="panel-link" href="works/ip.html">进入作品 →</a>
-        </div>
-        <a class="panel-link-wrap" href="works/ip.html"><div class="panel-preview panel-preview--contain"><img src="assets/ip/section-ip-preview.png" alt="小蓝猫 IP 主视觉" loading="lazy" /></div></a>
-      </div>
-    </article>
-    <article class="panel" id="section-scene" data-section="scene">
-      <div class="panel-bg"><img src="assets/scene/section-scene-bg.png" alt="" loading="lazy" /></div>
-      <div class="panel-scrim"></div>
-      <div class="panel-inner">
-        <div class="panel-copy">
-          <div class="panel-num">04</div>
-          <h2>场景渲染</h2>
-          <p>运用 C4D / Blender 搭建指挥中心、演播室、会议、商业零售、交通、xR 等六大类应用场景写实渲染，服务官网案例与销售物料。</p>
-          <div class="panel-tags"><span>3D</span><span>展会</span><span>解决方案</span></div>
-          <a class="panel-link" href="works/scene.html">进入作品 →</a>
-        </div>
-        <a class="panel-link-wrap" href="works/scene.html"><div class="panel-preview"><img src="assets/scene/002-1.png" alt="" loading="lazy" /></div></a>
-      </div>
-    </article>
+
+  <main class="works-index works-index--insta">
     <article class="panel" id="section-poster" data-section="poster">
-      <div class="panel-bg"><img src="assets/poster/section-poster-bg.png" alt="" loading="lazy" /></div>
-      <div class="panel-scrim"></div>
-      <div class="panel-inner">
-        <div class="panel-copy">
-          <div class="panel-num">05</div>
-          <h2>品牌平面</h2>
-          <p>多年品牌平面经验：主导 LPDISPLAY 等企业画册 VI 与 Logo 升级定稿，独立完成产品彩页与案例画册排版；统筹公众号、视频号社媒视觉与品牌图标体系，贯通官网、电商与国际展会物料输出。</p>
-          <div class="panel-tags"><span>品牌VI</span><span>产品彩页</span><span>社媒宣传</span><span>LOGO设计</span><span>图标设计</span></div>
-          <a class="panel-link" href="works/poster.html">进入作品 →</a>
+      <a class="panel-card" href="works/poster.html">
+        <div class="panel-bg"><img src="assets/poster/section-poster-bg.png" alt="" loading="lazy" /></div>
+        <div class="panel-overlay" aria-hidden="true"></div>
+        <div class="panel-feature">
+          <img src="assets/poster/section-poster-preview.png" alt="品牌主 KV" loading="lazy" />
         </div>
-        <a class="panel-link-wrap" href="works/poster.html"><div class="panel-preview"><img src="assets/poster/section-poster-preview.png" alt="LP Display 企业画册" loading="lazy" /></div></a>
-      </div>
+        <div class="panel-bottom">
+          <p class="panel-eyebrow">Brand Visual</p>
+          <h2>品牌视觉</h2>
+          <p class="panel-lead">新品主 KV · VI 手册 · 国际展会与跨境社媒</p>
+          <span class="panel-more">进入作品</span>
+        </div>
+      </a>
     </article>
-    <article class="panel" id="section-other" data-section="other">
-      <div class="panel-bg"><img src="assets/other/section-other-bg.png" alt="" loading="lazy" /></div>
-      <div class="panel-scrim"></div>
-      <div class="panel-inner">
-        <div class="panel-copy">
-          <div class="panel-num">06</div>
-          <h2>其他作品</h2>
-          <p>品牌主线之外的探索合集：收录动效短片、渲染实验、IP 小稿、字体与物料设计、插画练习等，记录风格尝试与技法积累。</p>
-          <div class="panel-tags"><span>动效</span><span>渲染</span><span>IP</span><span>字体设计</span><span>物料设计</span><span>插画</span></div>
-          <a class="panel-link" href="works/other.html">进入作品 →</a>
+
+    <article class="panel" id="section-product" data-section="product">
+      <a class="panel-card" href="works/product.html">
+        <div class="panel-bg"><img src="assets/product/section-product-bg.png" alt="" loading="lazy" /></div>
+        <div class="panel-overlay" aria-hidden="true"></div>
+        <div class="panel-feature">
+          <img src="assets/product/section-product-preview.png" alt="展台陈列 · 海滨立式数字海报屏" loading="lazy" />
         </div>
-        <a class="panel-link-wrap" href="works/other.html">
-          <div class="panel-preview"><img src="assets/other/section-other-preview.png" alt="其他作品 · 3D 场景探索" loading="lazy" /></div>
-        </a>
-      </div>
+        <div class="panel-bottom">
+          <p class="panel-eyebrow">Product Visual</p>
+          <h2>产品视觉</h2>
+          <p class="panel-lead">亚马逊 / 国际站主图与详情 · 产品渲染与 XR 方案</p>
+          <span class="panel-more">进入作品</span>
+        </div>
+      </a>
     </article>
-    <article class="panel panel-contact" id="section-contact" data-section="contact">
-      <div class="panel-scrim panel-scrim--soft" aria-hidden="true"></div>
-      <div class="panel-inner panel-inner--contact">
-        <div class="panel-copy panel-copy--center">
-          <div class="panel-num">07</div>
-          <h2>联系我</h2>
-          <p>欢迎品牌合作、全职机会或项目咨询，通常会在 24 小时内回复。</p>
+
+    <article class="panel" id="section-ip" data-section="ip">
+      <a class="panel-card" href="works/ip.html">
+        <div class="panel-bg"><img src="assets/ip/section-ip-bg.png" alt="" loading="lazy" /></div>
+        <div class="panel-overlay" aria-hidden="true"></div>
+        <div class="panel-feature panel-feature--contain">
+          <img src="assets/ip/section-ip-preview.png" alt="小蓝猫 IP" loading="lazy" />
         </div>
-        <div class="contact-cards">
-          <a class="contact-card" href="tel:+8615899782952">
-            <span class="contact-card__icon" aria-hidden="true">☎</span>
-            <span class="contact-card__label">电话 / 微信</span>
-            <span class="contact-card__value">+86 158 9978 2952</span>
-            <span class="contact-card__hint">微信同号，添加请注明来意</span>
-          </a>
-          <a class="contact-card" href="mailto:623797004@qq.com">
-            <span class="contact-card__icon" aria-hidden="true">✉</span>
-            <span class="contact-card__label">邮箱</span>
-            <span class="contact-card__value">623797004@qq.com</span>
-            <span class="contact-card__hint">如需进一步了解，欢迎邮件联系，我可提供完整简历与作品集</span>
-          </a>
+        <div class="panel-bottom">
+          <p class="panel-eyebrow">IP Design</p>
+          <h2>IP 设计</h2>
+          <p class="panel-lead">小蓝猫 XIAOLANMAO · 规范 · 社媒与周边落地</p>
+          <span class="panel-more">进入作品</span>
         </div>
-      </div>
+      </a>
+    </article>
+
+    <article class="panel" id="section-aigc" data-section="aigc">
+      <a class="panel-card" href="works/aigc.html">
+        <div class="panel-bg"><img src="assets/aigc/section-aigc-bg.png" alt="" loading="lazy" /></div>
+        <div class="panel-overlay" aria-hidden="true"></div>
+        <div class="panel-feature">
+          <img src="assets/aigc/section-aigc-preview.png" alt="品牌 IP 场景 · 风格参考快速试稿流" loading="lazy" />
+        </div>
+        <div class="panel-bottom">
+          <p class="panel-eyebrow">AIGC Workflow</p>
+          <h2>AIGC 工作流</h2>
+          <p class="panel-lead">星型审稿中枢 · IP 双引擎 · 电商三泳道 · 上线质检</p>
+          <span class="panel-more">进入作品</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="panel" id="section-scene" data-section="scene">
+      <a class="panel-card" href="works/scene.html">
+        <div class="panel-bg"><img src="assets/scene/section-scene-bg.png" alt="" loading="lazy" /></div>
+        <div class="panel-overlay" aria-hidden="true"></div>
+        <div class="panel-feature">
+          <img src="assets/scene/section-scene-preview.png" alt="机场候机厅 · 异形大屏场景" loading="lazy" />
+        </div>
+        <div class="panel-bottom">
+          <p class="panel-eyebrow">Scene 3D</p>
+          <h2>场景 3D</h2>
+          <p class="panel-lead">解决方案场景 · 展会展台 · 项目案例渲染</p>
+          <span class="panel-more">进入作品</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="panel" id="section-about" data-section="about">
+      <a class="panel-card" href="works/about.html">
+        <div class="panel-bg"><img src="assets/about/section-about-bg.png" alt="" loading="lazy" /></div>
+        <div class="panel-overlay" aria-hidden="true"></div>
+        <div class="panel-feature">
+          <img src="assets/about/section-about-preview.png" alt="关于我" loading="lazy" />
+        </div>
+        <div class="panel-bottom">
+          <p class="panel-eyebrow">About</p>
+          <h2>关于我</h2>
+          <p class="panel-lead">5 年品牌视觉 · 跨部门落地 · 求职意向与代表项目</p>
+          <span class="panel-more">了解更多</span>
+        </div>
+      </a>
     </article>
   </main>
-  <footer class="site-footer">
-    <p>&copy; 2026 TOM XIE · 个人作品集</p>
+
+  <footer class="site-footer site-footer--home">
+    <p>&copy; 2026 谢意 TOM XIE · Visual Designer · 深圳</p>
   </footer>
   <script src="js/app.js"></script>
 </body>

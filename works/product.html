@@ -3,146 +3,280 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>产品渲染 · TOM XIE</title>
+  <title>产品视觉 · 谢意 TOM XIE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
   <div class="cursor-glow" aria-hidden="true"></div>
-    <nav class="site-nav scrolled">
+        <nav class="site-nav scrolled">
     <div class="inner">
-      <a class="brand" href="../index.html">TOM XIE</a>
+      <a class="brand" href="../index.html">谢意 · TOM XIE</a>
       <ul class="nav-links">
+        <li><a href="../index.html#section-poster">品牌视觉</a></li>
+        <li><a href="../index.html#section-product">产品视觉</a></li>
+        <li><a href="../index.html#section-ip">IP 设计</a></li>
+        <li><a href="../index.html#section-aigc">AIGC</a></li>
+        <li><a href="../index.html#section-scene">场景 3D</a></li>
         <li><a href="../index.html#section-about">关于</a></li>
-        <li><a href="../index.html#section-product">产品渲染</a></li>
-        <li><a href="../index.html#section-ip">IP设计</a></li>
-        <li><a href="../index.html#section-scene">场景渲染</a></li>
-        <li><a href="../index.html#section-poster">品牌平面</a></li>
-        <li><a href="../index.html#section-other">其他作品</a></li>
-        <li><a href="../index.html#section-contact">联系</a></li>
       </ul>
+      <div class="nav-actions">
+        <button type="button" class="nav-contact-btn" id="nav-contact-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="nav-contact-menu">联系</button>
+        <div class="nav-contact-menu" id="nav-contact-menu" role="menu" hidden>
+          <p class="nav-contact-menu__lead">欢迎视觉设计相关合作，通常 24 小时内回复。</p>
+          <a class="nav-contact-menu__item" href="tel:+8615899782952" role="menuitem">
+            <span class="nav-contact-menu__label">电话 / 微信</span>
+            <span class="nav-contact-menu__value">+86 158 9978 2952</span>
+          </a>
+          <a class="nav-contact-menu__item" href="mailto:623797004@qq.com" role="menuitem">
+            <span class="nav-contact-menu__label">邮箱</span>
+            <span class="nav-contact-menu__value">623797004@qq.com</span>
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
   <header class="work-hero">
     <a class="back" href="../index.html#section-product">← 返回首页</a>
-    <p class="label">02 · Product</p>
-    <h1>产品渲染</h1>
-    <p>室内外 LED 高精度材质灯光渲染，用于画册、官网与销售提案；涵盖亚马逊、阿里国际站主图与详情页视觉体系。</p>
+    <p class="label">02 · Product Visual</p>
+    <h1>产品视觉</h1>
+    <p>跨境电商主图与详情页优先展示；并含 LED 产品渲染、方案场景与 XR 可视化，服务新品上市与销售提案。</p>
   </header>
 
   <nav class="collection-nav" aria-label="产品选集导航">
+    <a href="#col-ecom">跨境电商</a>
+    <a href="#col-ecom-detail">详情规范</a>
     <a href="#col-cob">LED箱体</a>
-    <a href="#col-module">一体机/广告机</a>
+    <a href="#col-display">产品展示</a>
     <a href="#col-aio">XR搭建方案</a>
-    <a href="#col-signage">LED租赁箱体</a>
-    <a href="#col-ecom">电商产品</a>
   </nav>
 
   <div class="work-collections">
 
-    <section class="gallery-collection" id="col-cob">
+
+<section class="gallery-collection" id="col-ecom">
       <header class="collection-head">
         <span class="collection-num">选集 01</span>
+        <h2>电商产品</h2>
+        <p>亚马逊、阿里巴巴国际站产品主图规范与详情页视觉，支撑风扇等品类出海展示与转化。</p>
+      </header>
+    <div class="ecom-dual" aria-label="电商产品入口">
+      <article class="ecom-promo-card">
+        <div class="ecom-promo-card__copy">
+          <p class="ecom-promo-card__eyebrow">精选素材</p>
+          <h3 class="ecom-promo-card__title">白色风扇产品</h3>
+        </div>
+        <div class="ecom-promo-card__visual" aria-hidden="true">
+          <img src="../assets/product/ecom/promo/fan-white.png" alt="" width="441" height="464" loading="lazy" decoding="async" />
+        </div>
+      </article>
+      <article class="ecom-promo-card">
+        <div class="ecom-promo-card__copy">
+          <p class="ecom-promo-card__eyebrow">精选素材</p>
+          <h3 class="ecom-promo-card__title">绿色风扇产品</h3>
+        </div>
+        <div class="ecom-promo-card__visual" aria-hidden="true">
+          <img src="../assets/product/ecom/promo/fan-green.png" alt="" width="440" height="464" loading="lazy" decoding="async" />
+        </div>
+      </article>
+    </div>
+
+    <div class="ecom-group" id="ecom-main">
+      
+    <div class="detail-feature-grid" id="col-ecom-detail">
+      <figure>
+        <a href="aigc.html#wf-ecom-composite"><img src="../assets/aigc/workflows/workflow-ecom-bg-composite.png" alt="电商主图背景合成工作流" loading="lazy" /></a>
+        <figcaption>主图背景合成流 · <a href="aigc.html#wf-ecom-composite">见 AIGC 工作流</a></figcaption>
+      </figure>
+      <figure>
+        <a href="aigc.html#wf-ecom-detail"><img src="../assets/aigc/workflows/workflow-ecom-detail-export.png" alt="详情页多模块导出工作流" loading="lazy" /></a>
+        <figcaption>详情长图 · 多模块切片导出 · <a href="aigc.html#col-ecom-workflows">AIGC 电商线</a></figcaption>
+      </figure>
+    </div>
+    <p class="aigc-note" style="margin-top: -8px;">跨境 A+ 批处理对齐见 <a href="aigc.html#wf-ecom-aplus">AIGC · 批处理对齐流</a>。</p>
+
+      <header class="ecom-group__head">
+        <h3 class="ecom-group__title">产品主图</h3>
+        <p class="ecom-group__desc">亚马逊 / 阿里国际站主图、场景海报与详情页长图，覆盖卖点与使用场景。</p>
+      </header>
+      <section class="gallery-strip" aria-label="产品主图">
+        <div class="horizontal-scroll">
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-960x600-01.jpg" alt="a-960x600-01" loading="lazy" /><figcaption>Amazon 主图 · 模块-01</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-1-960x600.jpg" alt="a-plus-1-960x600" loading="lazy" /><figcaption>A+ 模块 · 1</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-960x600-02.jpg" alt="a-960x600-02" loading="lazy" /><figcaption>Amazon 主图 · 模块-02</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-960x600-03.jpg" alt="a-960x600-03" loading="lazy" /><figcaption>Amazon 主图 · 模块-03</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-960x600-04.jpg" alt="a-960x600-04" loading="lazy" /><figcaption>Amazon 主图 · 模块-04</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-3-960x600.jpg" alt="a-plus-3-960x600" loading="lazy" /><figcaption>A+ 模块 · 3</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-2-960x600.jpg" alt="a-plus-2-960x600" loading="lazy" /><figcaption>A+ 模块 · 2</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-4-960x600.jpg" alt="a-plus-4-960x600" loading="lazy" /><figcaption>A+ 模块 · 4</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-5-960x600.jpg" alt="a-plus-5-960x600" loading="lazy" /><figcaption>A+ 模块 · 5</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-6-960x600.jpg" alt="a-plus-6-960x600" loading="lazy" /><figcaption>A+ 模块 · 6</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图03.jpg" alt="国际站主图 · 卖点模块 03" loading="lazy" /><figcaption>国际站主图 · 卖点模块 03</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图04.jpg" alt="国际站主图 · 卖点模块 04" loading="lazy" /><figcaption>国际站主图 · 卖点模块 04</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图05.jpg" alt="国际站主图 · 卖点模块 05" loading="lazy" /><figcaption>国际站主图 · 卖点模块 05</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图06.jpg" alt="国际站主图 · 卖点模块 06" loading="lazy" /><figcaption>国际站主图 · 卖点模块 06</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图07.jpg" alt="国际站主图 · 卖点模块 07" loading="lazy" /><figcaption>国际站主图 · 卖点模块 07</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图11.jpg" alt="国际站主图 · 卖点模块 11" loading="lazy" /><figcaption>国际站主图 · 卖点模块 11</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图12.jpg" alt="国际站主图 · 卖点模块 12" loading="lazy" /><figcaption>国际站主图 · 卖点模块 12</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图13.jpg" alt="国际站主图 · 卖点模块 13" loading="lazy" /><figcaption>国际站主图 · 卖点模块 13</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图14.jpg" alt="国际站主图 · 卖点模块 14" loading="lazy" /><figcaption>国际站主图 · 卖点模块 14</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图15.jpg" alt="国际站主图 · 卖点模块 15" loading="lazy" /><figcaption>国际站主图 · 卖点模块 15</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图17.jpg" alt="国际站主图 · 卖点模块 17" loading="lazy" /><figcaption>国际站主图 · 卖点模块 17</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图16.jpg" alt="国际站主图 · 卖点模块 16" loading="lazy" /><figcaption>国际站主图 · 卖点模块 16</figcaption></figure>
+        </div>
+      </section>
+
+<section class="gallery-collection" id="col-cob">
+      <header class="collection-head">
+        <span class="collection-num">选集 02</span>
         <h2>LED箱体</h2>
         <p>模组箱体、弧形屏体与结构拆解等高精度渲染，用于产品画册、官网详情与销售提案。</p>
       </header>
-      <section class="gallery-strip" aria-label="LED箱体 作品">
-        <div class="horizontal-scroll">
-          <figure class="gallery-card"><img src="../assets/product/cabinet/02-2.jpg" alt="02-2" loading="lazy" /><figcaption>02-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/scene-01.jpg" alt="scene-01" loading="lazy" /><figcaption>scene-01</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/panel-01.jpg" alt="panel-01" loading="lazy" /><figcaption>panel-01</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/banner-02.jpg" alt="banner-02" loading="lazy" /><figcaption>banner-02</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/02-1.jpg" alt="02-1" loading="lazy" /><figcaption>02-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/01-1.jpg" alt="01-1" loading="lazy" /><figcaption>01-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/012.jpg" alt="012" loading="lazy" /><figcaption>012</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/013.jpg" alt="013" loading="lazy" /><figcaption>013</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/010.jpg" alt="010" loading="lazy" /><figcaption>010</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/45G-008.jpg" alt="45G-008" loading="lazy" /><figcaption>45G-008</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/45G-009.jpg" alt="45G-009" loading="lazy" /><figcaption>45G-009</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/45G-010.jpg" alt="45G-010" loading="lazy" /><figcaption>45G-010</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/45G-007.jpg" alt="45G-007" loading="lazy" /><figcaption>45G-007</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/45G-012.jpg" alt="45G-012" loading="lazy" /><figcaption>45G-012</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/45G-010-alt.jpg" alt="45G-010-alt" loading="lazy" /><figcaption>45G-010-alt</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/007-3.jpg" alt="007-3" loading="lazy" /><figcaption>007-3</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/007-2.jpg" alt="007-2" loading="lazy" /><figcaption>007-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/008-1.jpg" alt="008-1" loading="lazy" /><figcaption>008-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/008-2.jpg" alt="008-2" loading="lazy" /><figcaption>008-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/cabinet-20.jpg" alt="cabinet-20" loading="lazy" /><figcaption>cabinet-20</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/03.jpg" alt="03" loading="lazy" /><figcaption>03</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/04.jpg" alt="04" loading="lazy" /><figcaption>04</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/scene-09.jpg" alt="scene-09" loading="lazy" /><figcaption>scene-09</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/scene-08.jpg" alt="scene-08" loading="lazy" /><figcaption>scene-08</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/014-1.jpg" alt="014-1" loading="lazy" /><figcaption>014-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/013-1.jpg" alt="013-1" loading="lazy" /><figcaption>013-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/012-2.jpg" alt="012-2" loading="lazy" /><figcaption>012-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/011-2.jpg" alt="011-2" loading="lazy" /><figcaption>011-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/024.jpg" alt="024" loading="lazy" /><figcaption>024</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/027.jpg" alt="027" loading="lazy" /><figcaption>027</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/023.jpg" alt="023" loading="lazy" /><figcaption>023</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/025.jpg" alt="025" loading="lazy" /><figcaption>025</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/026.jpg" alt="026" loading="lazy" /><figcaption>026</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/011.jpg" alt="011" loading="lazy" /><figcaption>011</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/017.jpg" alt="017" loading="lazy" /><figcaption>017</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/015.jpg" alt="015" loading="lazy" /><figcaption>015</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/008.jpg" alt="008" loading="lazy" /><figcaption>008</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/007.jpg" alt="007" loading="lazy" /><figcaption>007</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/009.jpg" alt="009" loading="lazy" /><figcaption>009</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/63L-012.jpg" alt="63L-012" loading="lazy" /><figcaption>63L-012</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/63L-013.jpg" alt="63L-013" loading="lazy" /><figcaption>63L-013</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/cabinet/scene-06.jpg" alt="scene-06" loading="lazy" /><figcaption>scene-06</figcaption></figure>
+      <div class="product-showcase" aria-label="LED箱体产品展示">
+        <div class="product-showcase-grid">
+          <article class="product-showcase-card">
+            <div class="product-showcase-card__inner">
+              <h3 class="product-showcase-card__title">魔方系列-SMD</h3>
+              <p class="product-showcase-card__subtitle">无缝拼接 · 超高对比度 · GOB 封装防护</p>
+              <div class="product-showcase-card__media">
+                <img src="../assets/product/cabinet/cutout-01.png" alt="魔方系列-SMD LED 箱体" loading="lazy" />
+              </div>
+              <div class="product-showcase-card__footer">
+                <a class="product-showcase-card__more" href="../assets/product/cabinet/cutout-01.png" target="_blank" rel="noopener">查看大图</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-showcase-card">
+            <div class="product-showcase-card__inner">
+              <h3 class="product-showcase-card__title">LA系列</h3>
+              <p class="product-showcase-card__subtitle">重量轻 · 护角设计 · 曲面拼接</p>
+              <div class="product-showcase-card__media">
+                <img src="../assets/product/cabinet/cutout-02.png" alt="LA系列 LED 租赁箱体" loading="lazy" />
+              </div>
+              <div class="product-showcase-card__footer">
+                <a class="product-showcase-card__more" href="../assets/product/cabinet/cutout-02.png" target="_blank" rel="noopener">查看大图</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-showcase-card">
+            <div class="product-showcase-card__inner">
+              <h3 class="product-showcase-card__title">黑钻系列</h3>
+              <p class="product-showcase-card__subtitle">GOB 高防护 · 无缝拼接 · 多种箱体尺寸</p>
+              <div class="product-showcase-card__media">
+                <img src="../assets/product/cabinet/cutout-03.png" alt="黑钻系列 LED 箱体" loading="lazy" />
+              </div>
+              <div class="product-showcase-card__footer">
+                <a class="product-showcase-card__more" href="../assets/product/cabinet/cutout-03.png" target="_blank" rel="noopener">查看大图</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-showcase-card">
+            <div class="product-showcase-card__inner">
+              <h3 class="product-showcase-card__title">LX系列</h3>
+              <p class="product-showcase-card__subtitle">模块化设计 · 插拔式电源盒 · 曲面拼接</p>
+              <div class="product-showcase-card__media">
+                <img src="../assets/product/cabinet/cutout-04.png" alt="LX系列 COB 租赁 LED 箱体" loading="lazy" />
+              </div>
+              <div class="product-showcase-card__footer">
+                <a class="product-showcase-card__more" href="../assets/product/cabinet/cutout-04.png" target="_blank" rel="noopener">查看大图</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-showcase-card">
+            <div class="product-showcase-card__inner">
+              <h3 class="product-showcase-card__title">黑精灵系列-COB</h3>
+              <p class="product-showcase-card__subtitle">超轻超薄 · 超强防护 · 超高对比度</p>
+              <div class="product-showcase-card__media">
+                <img src="../assets/product/cabinet/cutout-05.png" alt="黑精灵系列-COB LED 箱体" loading="lazy" />
+              </div>
+              <div class="product-showcase-card__footer">
+                <a class="product-showcase-card__more" href="../assets/product/cabinet/cutout-05.png" target="_blank" rel="noopener">查看大图</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-showcase-card">
+            <div class="product-showcase-card__inner">
+              <h3 class="product-showcase-card__title">萤火虫系列-COB</h3>
+              <p class="product-showcase-card__subtitle">冗余设计 · GOB 封装高防护 · 大尺寸箱体</p>
+              <div class="product-showcase-card__media">
+                <img src="../assets/product/cabinet/cutout-06.png" alt="萤火虫系列-COB LED 箱体" loading="lazy" />
+              </div>
+              <div class="product-showcase-card__footer">
+                <a class="product-showcase-card__more" href="../assets/product/cabinet/cutout-06.png" target="_blank" rel="noopener">查看大图</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-showcase-card">
+            <div class="product-showcase-card__inner">
+              <h3 class="product-showcase-card__title">V-Poster系列</h3>
+              <p class="product-showcase-card__subtitle">超薄设计 · 多种安装方式 · 云端集群控制</p>
+              <div class="product-showcase-card__media">
+                <img src="../assets/product/cabinet/cutout-07.png" alt="V-Poster系列 立式海报屏" loading="lazy" />
+              </div>
+              <div class="product-showcase-card__footer">
+                <a class="product-showcase-card__more" href="../assets/product/cabinet/cutout-07.png" target="_blank" rel="noopener">查看大图</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-showcase-card">
+            <div class="product-showcase-card__inner">
+              <h3 class="product-showcase-card__title">V-Pad系列</h3>
+              <p class="product-showcase-card__subtitle">高度集成设计 · 互动功能 · 远程控制</p>
+              <div class="product-showcase-card__media">
+                <img src="../assets/product/cabinet/cutout-08.png" alt="V-Pad系列 移动一体屏" loading="lazy" />
+              </div>
+              <div class="product-showcase-card__footer">
+                <a class="product-showcase-card__more" href="../assets/product/cabinet/cutout-08.png" target="_blank" rel="noopener">查看大图</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-showcase-card">
+            <div class="product-showcase-card__inner">
+              <h3 class="product-showcase-card__title">LA系列</h3>
+              <p class="product-showcase-card__subtitle">快速维护 · 多种拼接方式 · 高刷新率</p>
+              <div class="product-showcase-card__media">
+                <img src="../assets/product/cabinet/cutout-09.png" alt="LA系列 舞台租赁 LED 箱体" loading="lazy" />
+              </div>
+              <div class="product-showcase-card__footer">
+                <a class="product-showcase-card__more" href="../assets/product/cabinet/cutout-09.png" target="_blank" rel="noopener">查看大图</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </section>
+      </div>
     </section>
 
-    <section class="gallery-collection" id="col-module">
-      <header class="collection-head">
-        <span class="collection-num">选集 02</span>
-        <h2>一体机/广告机</h2>
-        <p>会议一体机、交互一体机与立式广告机产品渲染，呈现整机形态与商显终端质感。</p>
-      </header>
-      <section class="gallery-strip" aria-label="一体机与广告机作品">
-        <div class="horizontal-scroll">
-          <figure class="gallery-card"><img src="../assets/product/aio/5x5-1.png" alt="5×5 箱体结构细节" loading="lazy" /><figcaption>5×5 箱体结构细节</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/5x5-2.png" alt="5×5 箱体接口特写" loading="lazy" /><figcaption>5×5 箱体接口特写</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/001.png" alt="移动 LED 屏正面" loading="lazy" /><figcaption>移动 LED 屏正面</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/6x6-005.png" alt="6×6 箱体背面" loading="lazy" /><figcaption>6×6 箱体背面</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/6x6-006.png" alt="6×6 模组背板" loading="lazy" /><figcaption>6×6 模组背板</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/001-2.png" alt="箱体锁扣机构" loading="lazy" /><figcaption>箱体锁扣机构</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/008.png" alt="商显一体机侧视" loading="lazy" /><figcaption>商显一体机侧视</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/007.png" alt="接口面板特写" loading="lazy" /><figcaption>接口面板特写</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/017.png" alt="立式海报屏" loading="lazy" /><figcaption>立式海报屏</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/010.png" alt="海报屏背面" loading="lazy" /><figcaption>海报屏背面</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/009.png" alt="三联海报屏" loading="lazy" /><figcaption>三联海报屏</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/box-005.png" alt="箱体背面结构 A" loading="lazy" /><figcaption>箱体背面结构 A</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/box-006.png" alt="箱体背面结构 B" loading="lazy" /><figcaption>箱体背面结构 B</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/box-005-b.png" alt="箱体背面结构 C" loading="lazy" /><figcaption>箱体背面结构 C</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/box-006-b.png" alt="箱体背面结构 D" loading="lazy" /><figcaption>箱体背面结构 D</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/box-007.png" alt="折角双屏展示架" loading="lazy" /><figcaption>折角双屏展示架</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/008-b.png" alt="万向轮脚轮细节" loading="lazy" /><figcaption>万向轮脚轮细节</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/009-b.png" alt="双屏展台场景" loading="lazy" /><figcaption>双屏展台场景</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/011-2.png" alt="多形态产品组合" loading="lazy" /><figcaption>多形态产品组合</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/010-b.png" alt="三联屏背面" loading="lazy" /><figcaption>三联屏背面</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/012-1.png" alt="折屏香水展示" loading="lazy" /><figcaption>折屏香水展示</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/s-poster.png" alt="S 型海报屏" loading="lazy" /><figcaption>S 型海报屏</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/01-2.png" alt="海报屏侧视结构" loading="lazy" /><figcaption>海报屏侧视结构</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/lineup.png" alt="产品线全家福" loading="lazy" /><figcaption>产品线全家福</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/aio/banner1.png" alt="产品线横幅" loading="lazy" /><figcaption>产品线横幅</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/001-01.png" alt="LED 模组 KV" loading="lazy" /><figcaption>模组系列 KV 01</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/02-1.png" alt="LED 模组渲染" loading="lazy" /><figcaption>模组产品渲染</figcaption></figure>
-        </div>
-      </section>
-    </section>
-
-    <section class="gallery-collection" id="col-aio">
+<section class="gallery-collection" id="col-display">
       <header class="collection-head">
         <span class="collection-num">选集 03</span>
+        <h2>产品展示</h2>
+        <p>商显终端、模组屏体与数字海报等多品类产品渲染，涵盖展厅组合、场景化陈列与正背面结构呈现。</p>
+      </header>
+      <section class="gallery-strip" aria-label="产品展示作品">
+        <div class="horizontal-scroll">
+          <figure class="gallery-card gallery-card--wide"><img src="../assets/product/display/01-showroom-lineup.jpg" alt="展厅产品线组合" loading="lazy" /><figcaption>展厅产品线组合</figcaption></figure>
+          <figure class="gallery-card gallery-card--wide"><img src="../assets/product/display/02-mountain-lineup.jpg" alt="雪山场景多品类展示" loading="lazy" /><figcaption>雪山场景多品类展示</figcaption></figure>
+          <figure class="gallery-card gallery-card--wide"><img src="../assets/product/display/03-dark-studio-modules.jpg" alt="暗场模组组合" loading="lazy" /><figcaption>暗场模组组合</figcaption></figure>
+          <figure class="gallery-card gallery-card--wide"><img src="../assets/product/display/04-four-panels-gallery.jpg" alt="四联屏正背面展示" loading="lazy" /><figcaption>四联屏正背面展示</figcaption></figure>
+          <figure class="gallery-card gallery-card--wide"><img src="../assets/product/display/05-nature-content-panels.jpg" alt="自然题材屏体组合" loading="lazy" /><figcaption>自然题材屏体组合</figcaption></figure>
+          <figure class="gallery-card gallery-card--wide"><img src="../assets/product/display/06-dynamic-multi-panels.jpg" alt="动态多屏组合" loading="lazy" /><figcaption>动态多屏组合</figcaption></figure>
+          <figure class="gallery-card gallery-card--wide"><img src="../assets/product/display/07-coastal-digital-posters.jpg" alt="海滨数字海报屏" loading="lazy" /><figcaption>海滨数字海报屏</figcaption></figure>
+          <figure class="gallery-card gallery-card--wide"><img src="../assets/product/display/08-lifestyle-square-panels.jpg" alt="居家场景小屏阵列" loading="lazy" /><figcaption>居家场景小屏阵列</figcaption></figure>
+        </div>
+      </section>
+
+<section class="gallery-collection" id="col-aio">
+      <header class="collection-head">
+        <span class="collection-num">选集 04</span>
         <h2>XR搭建方案</h2>
         <p>xR 虚拟拍摄与演播空间搭建方案可视化，呈现屏体布局、灯光与拍摄场景结构。</p>
       </header>
       <section class="gallery-strip" aria-label="XR搭建方案作品">
         <div class="horizontal-scroll">
+          <figure class="gallery-card"><img src="../assets/product/xr/xr-00-underwater-cave-volume.jpg" alt="水下洞穴 XR 虚拟棚" loading="lazy" /><figcaption>水下洞穴 · XR 虚拟棚方案</figcaption></figure>
+          <figure class="gallery-card"><img src="../assets/product/xr/xr-00-virtual-production-set.jpg" alt="影视虚拟拍摄 XR 现场" loading="lazy" /><figcaption>影视虚拟拍摄 · LED Volume 现场</figcaption></figure>
           <figure class="gallery-card"><img src="../assets/product/xr/xr-01-curved-wall-floor.jpg" alt="弧形屏体与地屏" loading="lazy" /><figcaption>弧形屏体与地屏</figcaption></figure>
           <figure class="gallery-card"><img src="../assets/product/xr/xr-02-curved-truss-side.jpg" alt="弧形屏桁架侧视" loading="lazy" /><figcaption>弧形屏桁架侧视</figcaption></figure>
           <figure class="gallery-card"><img src="../assets/product/xr/xr-03-corner-volume.jpg" alt="三面体 LED 体积" loading="lazy" /><figcaption>三面体 LED 体积</figcaption></figure>
@@ -153,158 +287,6 @@
           <figure class="gallery-card"><img src="../assets/product/xr/xr-08-curved-rear-structure.jpg" alt="屏体背部结构" loading="lazy" /><figcaption>屏体背部结构</figcaption></figure>
         </div>
       </section>
-    </section>
-
-    <section class="gallery-collection" id="col-signage">
-      <header class="collection-head">
-        <span class="collection-num">选集 04</span>
-        <h2>LED租赁箱体</h2>
-        <p>租赁屏箱体产品高精度渲染，突出轻量化结构、快装接口与现场搭建展示效果。</p>
-      </header>
-      <section class="gallery-strip" aria-label="LED租赁箱体作品">
-        <div class="horizontal-scroll">
-          <figure class="gallery-card"><img src="../assets/product/rental/03-2.jpg" alt="03-2" loading="lazy" /><figcaption>03-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/corner-01.jpg" alt="corner-01" loading="lazy" /><figcaption>corner-01</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/rear-02.jpg" alt="rear-02" loading="lazy" /><figcaption>rear-02</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/008.jpg" alt="008" loading="lazy" /><figcaption>008</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/007.jpg" alt="007" loading="lazy" /><figcaption>007</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/002.jpg" alt="002" loading="lazy" /><figcaption>002</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/005.jpg" alt="005" loading="lazy" /><figcaption>005</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/lock-02.jpg" alt="lock-02" loading="lazy" /><figcaption>lock-02</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/press-detail.jpg" alt="press-detail" loading="lazy" /><figcaption>press-detail</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/front-back.jpg" alt="front-back" loading="lazy" /><figcaption>front-back</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/panel-01.jpg" alt="panel-01" loading="lazy" /><figcaption>panel-01</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/panel-02.jpg" alt="panel-02" loading="lazy" /><figcaption>panel-02</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/wall-4x4.jpg" alt="wall-4x4" loading="lazy" /><figcaption>wall-4x4</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/rear-red.jpg" alt="rear-red" loading="lazy" /><figcaption>rear-red</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/module-tilt.jpg" alt="module-tilt" loading="lazy" /><figcaption>module-tilt</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/exploded.jpg" alt="exploded" loading="lazy" /><figcaption>exploded</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/rear-open.jpg" alt="rear-open" loading="lazy" /><figcaption>rear-open</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/corner-lock.jpg" alt="corner-lock" loading="lazy" /><figcaption>corner-lock</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/019-1.jpg" alt="019-1" loading="lazy" /><figcaption>019-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/020.jpg" alt="020" loading="lazy" /><figcaption>020</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/043.jpg" alt="043" loading="lazy" /><figcaption>043</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/042.jpg" alt="042" loading="lazy" /><figcaption>042</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/012.jpg" alt="012" loading="lazy" /><figcaption>012</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/038.jpg" alt="038" loading="lazy" /><figcaption>038</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/021.jpg" alt="021" loading="lazy" /><figcaption>021</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/022.jpg" alt="022" loading="lazy" /><figcaption>022</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/011.jpg" alt="011" loading="lazy" /><figcaption>011</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/34.jpg" alt="34" loading="lazy" /><figcaption>34</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/024.jpg" alt="024" loading="lazy" /><figcaption>024</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/006.jpg" alt="006" loading="lazy" /><figcaption>006</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/005-alt.jpg" alt="005-alt" loading="lazy" /><figcaption>005-alt</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/023.jpg" alt="023" loading="lazy" /><figcaption>023</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/011-alt.jpg" alt="011-alt" loading="lazy" /><figcaption>011-alt</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/014.jpg" alt="014" loading="lazy" /><figcaption>014</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/015.jpg" alt="015" loading="lazy" /><figcaption>015</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/007-alt.jpg" alt="007-alt" loading="lazy" /><figcaption>007-alt</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/016.jpg" alt="016" loading="lazy" /><figcaption>016</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/019.jpg" alt="019" loading="lazy" /><figcaption>019</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/018.jpg" alt="018" loading="lazy" /><figcaption>018</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/009.jpg" alt="009" loading="lazy" /><figcaption>009</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/027.jpg" alt="027" loading="lazy" /><figcaption>027</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/rental/026.jpg" alt="026" loading="lazy" /><figcaption>026</figcaption></figure>
-        </div>
-      </section>
-    </section>
-
-    <section class="gallery-collection" id="col-ecom">
-      <header class="collection-head">
-        <span class="collection-num">选集 05</span>
-        <h2>电商产品</h2>
-        <p>亚马逊、阿里巴巴国际站产品主图规范与详情页视觉，支撑风扇等品类出海展示与转化。</p>
-      </header>
-    <div class="ecom-group" id="ecom-white">
-      <header class="ecom-group__head">
-        <h3 class="ecom-group__title">白色风扇</h3>
-        <p class="ecom-group__desc">露营风扇白色款单品与组合渲染，黑底棚拍突出结构与质感。</p>
-      </header>
-      <section class="gallery-strip" aria-label="白色风扇">
-        <div class="horizontal-scroll">
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/009.jpg" alt="009" loading="lazy" /><figcaption>009</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/14-1.jpg" alt="14-1" loading="lazy" /><figcaption>14-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/010.jpg" alt="010" loading="lazy" /><figcaption>010</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/12-1.jpg" alt="12-1" loading="lazy" /><figcaption>12-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/16-1.jpg" alt="16-1" loading="lazy" /><figcaption>16-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/002-1.jpg" alt="002-1" loading="lazy" /><figcaption>002-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/27.jpg" alt="27" loading="lazy" /><figcaption>27</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/33-2.jpg" alt="33-2" loading="lazy" /><figcaption>33-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/25.jpg" alt="25" loading="lazy" /><figcaption>25</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/37-2.jpg" alt="37-2" loading="lazy" /><figcaption>37-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/17.jpg" alt="17" loading="lazy" /><figcaption>17</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/34-2.jpg" alt="34-2" loading="lazy" /><figcaption>34-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/20.jpg" alt="20" loading="lazy" /><figcaption>20</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/38-2.jpg" alt="38-2" loading="lazy" /><figcaption>38-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/002-2.jpg" alt="002-2" loading="lazy" /><figcaption>002-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/004.jpg" alt="004" loading="lazy" /><figcaption>004</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/white/23.jpg" alt="23" loading="lazy" /><figcaption>23</figcaption></figure>
-        </div>
-      </section>
-    </div>
-    <div class="ecom-group" id="ecom-green">
-      <header class="ecom-group__head">
-        <h3 class="ecom-group__title">绿色风扇</h3>
-        <p class="ecom-group__desc">橄榄绿款风扇单品、场景与功能卖点图，含磁吸遥控等电商详情视觉。</p>
-      </header>
-      <section class="gallery-strip" aria-label="绿色风扇">
-        <div class="horizontal-scroll">
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/023.jpg" alt="023" loading="lazy" /><figcaption>023</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/021.jpg" alt="021" loading="lazy" /><figcaption>021</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/31.jpg" alt="31" loading="lazy" /><figcaption>31</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/030.jpg" alt="030" loading="lazy" /><figcaption>030</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/022.jpg" alt="022" loading="lazy" /><figcaption>022</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/40-1.jpg" alt="40-1" loading="lazy" /><figcaption>40-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/06.jpg" alt="06" loading="lazy" /><figcaption>06</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/01.jpg" alt="01" loading="lazy" /><figcaption>01</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/13-2.jpg" alt="13-2" loading="lazy" /><figcaption>13-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/024.jpg" alt="024" loading="lazy" /><figcaption>024</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/001-2.jpg" alt="001-2" loading="lazy" /><figcaption>001-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/14-2.jpg" alt="14-2" loading="lazy" /><figcaption>14-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/38-1.jpg" alt="38-1" loading="lazy" /><figcaption>38-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/42.jpg" alt="42" loading="lazy" /><figcaption>42</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/32-1.jpg" alt="32-1" loading="lazy" /><figcaption>32-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/green/41-1.jpg" alt="41-1" loading="lazy" /><figcaption>41-1</figcaption></figure>
-        </div>
-      </section>
-    </div>
-    <div class="ecom-group" id="ecom-main">
-      <header class="ecom-group__head">
-        <h3 class="ecom-group__title">产品主图</h3>
-        <p class="ecom-group__desc">亚马逊 / 阿里国际站主图、场景海报与详情页长图，覆盖卖点与使用场景。</p>
-      </header>
-      <section class="gallery-strip" aria-label="产品主图">
-        <div class="horizontal-scroll">
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-960x600-01.jpg" alt="a-960x600-01" loading="lazy" /><figcaption>a-960x600-01</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-1-960x600.jpg" alt="a-plus-1-960x600" loading="lazy" /><figcaption>a-plus-1-960x600</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-960x600-02.jpg" alt="a-960x600-02" loading="lazy" /><figcaption>a-960x600-02</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-960x600-03.jpg" alt="a-960x600-03" loading="lazy" /><figcaption>a-960x600-03</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-960x600-04.jpg" alt="a-960x600-04" loading="lazy" /><figcaption>a-960x600-04</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-3-960x600.jpg" alt="a-plus-3-960x600" loading="lazy" /><figcaption>a-plus-3-960x600</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-2-960x600.jpg" alt="a-plus-2-960x600" loading="lazy" /><figcaption>a-plus-2-960x600</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-4-960x600.jpg" alt="a-plus-4-960x600" loading="lazy" /><figcaption>a-plus-4-960x600</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-5-960x600.jpg" alt="a-plus-5-960x600" loading="lazy" /><figcaption>a-plus-5-960x600</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/a-plus-6-960x600.jpg" alt="a-plus-6-960x600" loading="lazy" /><figcaption>a-plus-6-960x600</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图02-1.jpg" alt="主图02-1" loading="lazy" /><figcaption>主图02-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图01-1.jpg" alt="主图01-1" loading="lazy" /><figcaption>主图01-1</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图01-2.jpg" alt="主图01-2" loading="lazy" /><figcaption>主图01-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图02-2.jpg" alt="主图02-2" loading="lazy" /><figcaption>主图02-2</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图03.jpg" alt="主图03" loading="lazy" /><figcaption>主图03</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图04.jpg" alt="主图04" loading="lazy" /><figcaption>主图04</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图05.jpg" alt="主图05" loading="lazy" /><figcaption>主图05</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图06.jpg" alt="主图06" loading="lazy" /><figcaption>主图06</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图07.jpg" alt="主图07" loading="lazy" /><figcaption>主图07</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图11.jpg" alt="主图11" loading="lazy" /><figcaption>主图11</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图12.jpg" alt="主图12" loading="lazy" /><figcaption>主图12</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图13.jpg" alt="主图13" loading="lazy" /><figcaption>主图13</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图14.jpg" alt="主图14" loading="lazy" /><figcaption>主图14</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图15.jpg" alt="主图15" loading="lazy" /><figcaption>主图15</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图17.jpg" alt="主图17" loading="lazy" /><figcaption>主图17</figcaption></figure>
-          <figure class="gallery-card"><img src="../assets/product/ecom/main/主图16.jpg" alt="主图16" loading="lazy" /><figcaption>主图16</figcaption></figure>
-        </div>
-      </section>
-    </div>
-    </section>
 
   </div>
 
