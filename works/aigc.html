@@ -10,29 +10,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
+<body data-i18n-page="aigc">
   <div class="cursor-glow" aria-hidden="true"></div>
   <nav class="site-nav scrolled">
     <div class="inner">
       <a class="brand" href="../index.html">谢意 · TOM XIE</a>
       <ul class="nav-links">
-        <li><a href="../index.html#section-poster">品牌视觉</a></li>
-        <li><a href="../index.html#section-product">产品视觉</a></li>
-        <li><a href="../index.html#section-ip">IP 设计</a></li>
-        <li><a href="../index.html#section-aigc">AIGC</a></li>
-        <li><a href="../index.html#section-scene">场景 3D</a></li>
-        <li><a href="../index.html#section-about">关于</a></li>
+        <li><a href="../index.html#section-poster" data-i18n="nav.brandVisual">品牌视觉</a></li>
+        <li><a href="../index.html#section-product" data-i18n="nav.productVisual">产品视觉</a></li>
+        <li><a href="../index.html#section-ip" data-i18n="nav.ipDesign">IP 设计</a></li>
+        <li><a href="../index.html#section-aigc" data-i18n="nav.aigc">AIGC</a></li>
+        <li><a href="../index.html#section-scene" data-i18n="nav.scene3d">场景 3D</a></li>
+        <li><a href="../index.html#section-about" data-i18n="nav.about">关于</a></li>
       </ul>
-      <div class="nav-actions">
-        <button type="button" class="nav-contact-btn" id="nav-contact-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="nav-contact-menu">联系</button>
+            <div class="nav-actions">
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch to English">EN</button>
+        <button type="button" class="nav-contact-btn" id="nav-contact-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="nav-contact-menu" data-i18n="nav.contact">联系</button>
         <div class="nav-contact-menu" id="nav-contact-menu" role="menu" hidden>
-          <p class="nav-contact-menu__lead">欢迎视觉设计相关合作，通常 24 小时内回复。</p>
+          <p class="nav-contact-menu__lead" data-i18n="nav.contactLead">欢迎视觉设计相关合作，通常 24 小时内回复。</p>
           <a class="nav-contact-menu__item" href="tel:+8615899782952" role="menuitem">
-            <span class="nav-contact-menu__label">电话 / 微信</span>
+            <span class="nav-contact-menu__label" data-i18n="nav.phoneWechat">电话 / 微信</span>
             <span class="nav-contact-menu__value">+86 158 9978 2952</span>
           </a>
           <a class="nav-contact-menu__item" href="mailto:623797004@qq.com" role="menuitem">
-            <span class="nav-contact-menu__label">邮箱</span>
+            <span class="nav-contact-menu__label" data-i18n="nav.email">邮箱</span>
             <span class="nav-contact-menu__value">623797004@qq.com</span>
           </a>
         </div>
@@ -41,10 +42,10 @@
   </nav>
 
   <header class="work-hero">
-    <a class="back" href="../index.html#section-aigc">← 返回首页</a>
+    <a class="back" href="../index.html#section-aigc" data-i18n="common.backHome">← 返回首页</a>
     <p class="label">04 · AIGC</p>
-    <h1>AIGC 视觉工作流</h1>
-    <p>2025.05 起建立「<strong style="color: var(--text); font-weight: 600;">PS 终稿审稿中枢</strong>」汇聚 IP / 电商 / KV / 详情等素材，再按品牌 IP 与电商视觉分线执行；含双引擎并行、三泳道闭环与上线质检驳回回流。</p>
+    <h1><span data-i18n="aigc.heroTitle">AIGC 视觉工作流</span></h1>
+    <p><span data-i18n="aigc.heroDesc">2025.05 起建立「<strong style="color: var(--text); font-weight: 600;">PS 终稿审稿中枢</strong>」汇聚 IP / 电商 / KV / 详情等素材，再按品牌 IP 与电商视觉分线执行；含双引擎并行、三泳道闭环与上线质检驳回回流。</span></p>
   </header>
 
   <nav class="collection-nav" aria-label="AIGC 选集导航">
@@ -320,7 +321,9 @@
 
   </div>
 
-  <footer class="site-footer"><p><a href="../index.html">← 返回作品集首页</a></p></footer>
+  <footer class="site-footer"><p><a href="../index.html" data-i18n="common.backPortfolio">← 返回作品集首页</a></p></footer>
+  <script src="../js/i18n-data.js"></script>
+  <script src="../js/i18n.js"></script>
   <script src="../js/app.js"></script>
 </body>
 </html>

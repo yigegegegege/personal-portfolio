@@ -14,28 +14,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="is-loading page-home">
+<body class="is-loading page-home" data-i18n-page="home">
   <nav class="site-nav">
     <div class="inner">
       <a class="brand" href="index.html">谢意 · TOM XIE</a>
       <ul class="nav-links">
-        <li><a href="#section-poster" data-section="poster">品牌视觉</a></li>
-        <li><a href="#section-product" data-section="product">产品视觉</a></li>
-        <li><a href="#section-ip" data-section="ip">IP 设计</a></li>
-        <li><a href="#section-aigc" data-section="aigc">AIGC</a></li>
-        <li><a href="#section-scene" data-section="scene">场景 3D</a></li>
-        <li><a href="#section-about" data-section="about">关于</a></li>
+        <li><a href="#section-poster" data-section="poster" data-i18n="nav.brandVisual">品牌视觉</a></li>
+        <li><a href="#section-product" data-section="product" data-i18n="nav.productVisual">产品视觉</a></li>
+        <li><a href="#section-ip" data-section="ip" data-i18n="nav.ipDesign">IP 设计</a></li>
+        <li><a href="#section-aigc" data-section="aigc" data-i18n="nav.aigc">AIGC</a></li>
+        <li><a href="#section-scene" data-section="scene" data-i18n="nav.scene3d">场景 3D</a></li>
+        <li><a href="#section-about" data-section="about" data-i18n="nav.about">关于</a></li>
       </ul>
-      <div class="nav-actions">
-        <button type="button" class="nav-contact-btn" id="nav-contact-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="nav-contact-menu">联系</button>
+            <div class="nav-actions">
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch to English">EN</button>
+        <button type="button" class="nav-contact-btn" id="nav-contact-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="nav-contact-menu" data-i18n="nav.contact">联系</button>
         <div class="nav-contact-menu" id="nav-contact-menu" role="menu" hidden>
-          <p class="nav-contact-menu__lead">欢迎视觉设计相关合作，通常 24 小时内回复。</p>
+          <p class="nav-contact-menu__lead" data-i18n="nav.contactLead">欢迎视觉设计相关合作，通常 24 小时内回复。</p>
           <a class="nav-contact-menu__item" href="tel:+8615899782952" role="menuitem">
-            <span class="nav-contact-menu__label">电话 / 微信</span>
+            <span class="nav-contact-menu__label" data-i18n="nav.phoneWechat">电话 / 微信</span>
             <span class="nav-contact-menu__value">+86 158 9978 2952</span>
           </a>
           <a class="nav-contact-menu__item" href="mailto:623797004@qq.com" role="menuitem">
-            <span class="nav-contact-menu__label">邮箱</span>
+            <span class="nav-contact-menu__label" data-i18n="nav.email">邮箱</span>
             <span class="nav-contact-menu__value">623797004@qq.com</span>
           </a>
         </div>
@@ -62,12 +63,12 @@
     </div>
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow">视觉设计师 · 品牌视觉 / 新品上市 · 深圳</p>
-      <h1>品牌与产品<em>视觉</em></h1>
-      <p class="hero-desc">主 KV · 跨境电商详情 · VIS 与 IP · AIGC 审稿工作流</p>
+      <p class="hero-eyebrow" data-i18n="home.heroEyebrow">视觉设计师 · 品牌视觉 / 新品上市 · 深圳</p>
+      <h1 data-i18n="home.heroTitle" data-i18n-html>品牌与产品<em>视觉</em></h1>
+      <p class="hero-desc" data-i18n="home.heroDesc">主 KV · 跨境电商详情 · VIS 与 IP · AIGC 审稿工作流</p>
       <div class="hero-actions">
-        <a class="hero-btn" href="#section-poster">浏览作品</a>
-        <a class="hero-link" href="works/about.html">关于我</a>
+        <a class="hero-btn" href="#section-poster" data-i18n="home.heroBrowse">浏览作品</a>
+        <a class="hero-link" href="works/about.html" data-i18n="home.heroAbout">关于我</a>
       </div>
     </div>
   </header>
@@ -82,9 +83,9 @@
         </div>
         <div class="panel-bottom">
           <p class="panel-eyebrow">Brand Visual</p>
-          <h2>品牌视觉</h2>
-          <p class="panel-lead">新品主 KV · VI 手册 · 国际展会与跨境社媒</p>
-          <span class="panel-more">进入作品</span>
+          <h2 data-i18n="home.panelBrandTitle">品牌视觉</h2>
+          <p class="panel-lead" data-i18n="home.panelBrandLead">新品主 KV · VI 手册 · 国际展会与跨境社媒</p>
+          <span class="panel-more" data-i18n="common.viewWork">进入作品</span>
         </div>
       </a>
     </article>
@@ -98,9 +99,9 @@
         </div>
         <div class="panel-bottom">
           <p class="panel-eyebrow">Product Visual</p>
-          <h2>产品视觉</h2>
-          <p class="panel-lead">亚马逊 / 国际站主图与详情 · 产品渲染与 XR 方案</p>
-          <span class="panel-more">进入作品</span>
+          <h2 data-i18n="home.panelProductTitle">产品视觉</h2>
+          <p class="panel-lead" data-i18n="home.panelProductLead">亚马逊 / 国际站主图与详情 · 产品渲染与 XR 方案</p>
+          <span class="panel-more" data-i18n="common.viewWork">进入作品</span>
         </div>
       </a>
     </article>
@@ -114,9 +115,9 @@
         </div>
         <div class="panel-bottom">
           <p class="panel-eyebrow">IP Design</p>
-          <h2>IP 设计</h2>
-          <p class="panel-lead">小蓝猫 XIAOLANMAO · 规范 · 社媒与周边落地</p>
-          <span class="panel-more">进入作品</span>
+          <h2 data-i18n="home.panelIpTitle">IP 设计</h2>
+          <p class="panel-lead" data-i18n="home.panelIpLead">小蓝猫 XIAOLANMAO · 规范 · 社媒与周边落地</p>
+          <span class="panel-more" data-i18n="common.viewWork">进入作品</span>
         </div>
       </a>
     </article>
@@ -130,9 +131,9 @@
         </div>
         <div class="panel-bottom">
           <p class="panel-eyebrow">AIGC Workflow</p>
-          <h2>AIGC 工作流</h2>
-          <p class="panel-lead">星型审稿中枢 · IP 双引擎 · 电商三泳道 · 上线质检</p>
-          <span class="panel-more">进入作品</span>
+          <h2 data-i18n="home.panelAigcTitle">AIGC 工作流</h2>
+          <p class="panel-lead" data-i18n="home.panelAigcLead">星型审稿中枢 · IP 双引擎 · 电商三泳道 · 上线质检</p>
+          <span class="panel-more" data-i18n="common.viewWork">进入作品</span>
         </div>
       </a>
     </article>
@@ -146,9 +147,9 @@
         </div>
         <div class="panel-bottom">
           <p class="panel-eyebrow">Scene 3D</p>
-          <h2>场景 3D</h2>
-          <p class="panel-lead">解决方案场景 · 展会展台 · 项目案例渲染</p>
-          <span class="panel-more">进入作品</span>
+          <h2 data-i18n="home.panelSceneTitle">场景 3D</h2>
+          <p class="panel-lead" data-i18n="home.panelSceneLead">解决方案场景 · 展会展台 · 项目案例渲染</p>
+          <span class="panel-more" data-i18n="common.viewWork">进入作品</span>
         </div>
       </a>
     </article>
@@ -162,17 +163,19 @@
         </div>
         <div class="panel-bottom">
           <p class="panel-eyebrow">About</p>
-          <h2>关于我</h2>
-          <p class="panel-lead">5 年品牌视觉 · 跨部门落地 · 求职意向与代表项目</p>
-          <span class="panel-more">了解更多</span>
+          <h2 data-i18n="home.panelAboutTitle">关于我</h2>
+          <p class="panel-lead" data-i18n="home.panelAboutLead">5 年品牌视觉 · 跨部门落地 · 求职意向与代表项目</p>
+          <span class="panel-more" data-i18n="common.learnMore">了解更多</span>
         </div>
       </a>
     </article>
   </main>
 
   <footer class="site-footer site-footer--home">
-    <p>&copy; 2026 谢意 TOM XIE · Visual Designer · 深圳</p>
+    <p data-i18n="home.footer">&copy; 2026 谢意 TOM XIE · Visual Designer · 深圳</p>
   </footer>
+  <script src="js/i18n-data.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

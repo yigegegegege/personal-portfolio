@@ -141,6 +141,35 @@ img {
   grid-column: 3;
   justify-self: end;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  min-width: 42px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: border-color 0.3s, background 0.3s, color 0.3s, transform 0.3s var(--ease-out);
+}
+
+.lang-toggle:hover {
+  border-color: rgba(255, 238, 0, 0.45);
+  background: rgba(255, 238, 0, 0.08);
+  color: var(--accent-a);
+  transform: translateY(-1px);
 }
 
 .nav-contact-btn {
