@@ -48,6 +48,10 @@ window.I18N_DATA = {
       "zh": "← 返回作品集首页",
       "en": "← Back to Portfolio"
     },
+    "common.backToTop": {
+      "zh": "回到顶部",
+      "en": "Back to top"
+    },
     "common.viewWork": {
       "zh": "进入作品",
       "en": "View Work"
@@ -77,8 +81,8 @@ window.I18N_DATA = {
       "en": "Brand & Product <em>Visual</em>"
     },
     "home.heroDesc": {
-      "zh": "主 KV · 跨境电商详情 · VIS 与 IP · AIGC 审稿工作流",
-      "en": "Key Visuals · Cross-border E-commerce · VIS & IP · AIGC Review Workflow"
+      "zh": "运动户外主 KV · 跨境电商详情 · VIS 与 IP · AIGC 审稿工作流",
+      "en": "Action Sports KV · Cross-border E-commerce · VIS & IP · AIGC Review Workflow"
     },
     "home.heroBrowse": {
       "zh": "浏览作品",
@@ -93,8 +97,8 @@ window.I18N_DATA = {
       "en": "Brand Visual"
     },
     "home.panelBrandLead": {
-      "zh": "新品主 KV · VI 手册 · 国际展会与跨境社媒",
-      "en": "Launch KV · VI Manual · Trade Shows & Cross-border Social"
+      "zh": "运动户外投放 KV · VI 手册 · 国际展会与跨境社媒",
+      "en": "Action Sports KV · VI Manual · Trade Shows & Cross-border Social"
     },
     "home.panelProductTitle": {
       "zh": "产品视觉",
@@ -373,16 +377,16 @@ window.I18N_DATA = {
       "en": "Cross-border listing visuals first; LED renders, solution scenes, and XR visualization for launch and sales proposals."
     },
     "ip.heroDesc": {
-      "zh": "主导「小蓝猫 / XIAOLANMAO」IP 定稿与应用规范，落地画册、展会、3D 屏显与营销周边；含 AIGC 场景与周边示意工作流。",
-      "en": "Led XIAOLANMAO IP finalization and guidelines; rolled out across brochures, shows, 3D displays, merch, and AIGC workflows."
+      "zh": "「小蓝猫 / XIAOLANMAO」从定稿、规范到展会与社媒落地；含应用场景融合、周边示意与 AIGC 辅助场景草图（保持 IP 合规）。",
+      "en": "XIAOLANMAO IP from finalization and guidelines to trade shows and social rollout — scene fusion, merch mockups, and compliant AIGC sketches."
     },
     "aigc.heroDesc": {
-      "zh": "2025.05 起建立「PS 终稿审稿中枢」汇聚 IP / 电商 / KV / 详情等素材，再按品牌 IP 与电商视觉分线执行；含双引擎并行、三泳道闭环与上线质检驳回回流。",
-      "en": "Since May 2025: PS final-review hub for IP, e-com, KV, and detail assets — dual engines, three-lane loops, and QC rejection flow."
+      "zh": "2025.05 起建立「<strong style=\"color: var(--text); font-weight: 600;\">PS 终稿审稿中枢</strong>」汇聚 IP / 电商 / KV / 详情等素材，再按品牌 IP 与电商视觉分线执行；含双引擎并行、三泳道闭环与上线质检驳回回流。",
+      "en": "Since May 2025, built a <strong style=\"color: var(--text); font-weight: 600;\">PS final-review hub</strong> for IP, e-commerce, KV, and detail assets — dual-engine lanes, three-lane loops, and QC rejection flow."
     },
     "scene.heroDesc": {
-      "zh": "C4D / Blender 搭建指挥中心、演播室、会议、商显、交通、xR 等应用场景写实渲染，服务官网案例、展会效果图与销售物料。",
-      "en": "C4D/Blender photoreal scenes — command centers, studios, retail, transport, xR — for web cases, booth renders, and sales kits."
+      "zh": "六大类解决方案场景、国际展会展台可视化与项目案例渲染，服务新品叙事、官网案例与销售提案。",
+      "en": "Six solution-scene categories, trade-show booth visualization, and case renders for launch narratives, web cases, and sales proposals."
     }
   },
   "titles": {
@@ -426,6 +430,78 @@ window.I18N_DATA = {
         "description": "Xie Yi TOM XIE — Visual designer portfolio: launch KV, cross-border e-commerce, brand VIS, IP guidelines & AIGC workflow",
         "ogTitle": "Xie Yi · Visual Designer Portfolio",
         "ogDescription": "Brand & product visual · Cross-border e-commerce · AIGC review workflow · Shenzhen"
+      }
+    },
+    "poster": {
+      "zh": {
+        "description": "谢意作品集 — 品牌视觉：新品上市主 KV、企业 VIS、产品画册与国际展会跨境社媒物料",
+        "ogTitle": "品牌视觉 · 谢意 TOM XIE",
+        "ogDescription": "运动户外主 KV · VI 手册 · INFOCOMM / ISE / 中东 SLS 展会物料"
+      },
+      "en": {
+        "description": "Brand visual portfolio — launch KV, corporate VIS, brochures, and international trade-show social assets",
+        "ogTitle": "Brand Visual · Xie Yi TOM XIE",
+        "ogDescription": "Action sports KV · VI manual · INFOCOMM / ISE / SLS trade-show assets"
+      }
+    },
+    "product": {
+      "zh": {
+        "description": "谢意作品集 — 产品视觉：跨境电商主图与详情页、LED 产品渲染与 XR 方案场景",
+        "ogTitle": "产品视觉 · 谢意 TOM XIE",
+        "ogDescription": "亚马逊 / 国际站主图与详情 · 产品渲染 · XR 可视化"
+      },
+      "en": {
+        "description": "Product visual portfolio — cross-border listing creatives, LED renders, and XR solution scenes",
+        "ogTitle": "Product Visual · Xie Yi TOM XIE",
+        "ogDescription": "Amazon / international listings · product renders · XR visualization"
+      }
+    },
+    "ip": {
+      "zh": {
+        "description": "谢意作品集 — IP 设计：小蓝猫 XIAOLANMAO 定稿、规范与展会社媒周边落地",
+        "ogTitle": "IP 设计 · 谢意 TOM XIE",
+        "ogDescription": "小蓝猫 IP · 应用规范 · 展会与社媒落地"
+      },
+      "en": {
+        "description": "IP design portfolio — XIAOLANMAO finalization, guidelines, and rollout across shows and social",
+        "ogTitle": "IP Design · Xie Yi TOM XIE",
+        "ogDescription": "XIAOLANMAO IP · brand guidelines · show & social rollout"
+      }
+    },
+    "aigc": {
+      "zh": {
+        "description": "谢意作品集 — AIGC 视觉工作流：星型 PS 审稿中枢、IP 双引擎、电商三泳道、上线质检与 Prompt 外形锁定",
+        "ogTitle": "AIGC 工作流 · 谢意 TOM XIE",
+        "ogDescription": "PS 终稿审稿中枢 · 双引擎并行 · 三泳道闭环 · 上线质检"
+      },
+      "en": {
+        "description": "AIGC visual workflow — PS review hub, dual IP engines, e-commerce lanes, and QC rejection flow",
+        "ogTitle": "AIGC Workflow · Xie Yi TOM XIE",
+        "ogDescription": "PS final-review hub · dual engines · three-lane loops · launch QC"
+      }
+    },
+    "scene": {
+      "zh": {
+        "description": "谢意作品集 — 场景 3D：六大类解决方案场景、国际展会展台可视化与项目案例渲染",
+        "ogTitle": "场景 3D · 谢意 TOM XIE",
+        "ogDescription": "解决方案场景 · 展会展台 · 官网案例与销售提案渲染"
+      },
+      "en": {
+        "description": "Scene 3D portfolio — solution environments, trade-show booth visualization, and case-study renders",
+        "ogTitle": "Scene 3D · Xie Yi TOM XIE",
+        "ogDescription": "Solution scenes · exhibition booths · web cases and sales proposals"
+      }
+    },
+    "about": {
+      "zh": {
+        "description": "谢意 TOM XIE — 视觉设计师 · 深圳 · 5 年品牌视觉经验，专注新品上市、VIS 与 AIGC 审稿工作流",
+        "ogTitle": "关于我 · 谢意 TOM XIE",
+        "ogDescription": "视觉设计师 · 品牌视觉 / 新品上市 · 深圳"
+      },
+      "en": {
+        "description": "About Xie Yi TOM XIE — visual designer in Shenzhen with 5 years in brand visual, launch KV, VIS, and AIGC workflow",
+        "ogTitle": "About · Xie Yi TOM XIE",
+        "ogDescription": "Visual designer · brand / launch visual · Shenzhen"
       }
     }
   }

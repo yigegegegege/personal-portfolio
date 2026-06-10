@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "01-ce01-ultra-bright-clear",
+    "title": "ULTRA BRIGHT · 超亮超清",
+    "master": "action-kv/01-ce01-ultra-bright-clear.jpg",
+    "wechat": "action-kv/channels/01-ce01-ultra-bright-clear-wechat-900x383.jpg",
+    "vertical": "action-kv/channels/01-ce01-ultra-bright-clear-vertical-9x16.jpg",
+    "wechat_size": "900×383",
+    "vertical_size": "1080×1920"
+  },
+  {
+    "slug": "02-kv03-motion-every-pixel",
+    "title": "MOTION IN EVERY PIXEL · 高刷性能",
+    "master": "action-kv/02-kv03-motion-every-pixel.jpg",
+    "wechat": "action-kv/channels/02-kv03-motion-every-pixel-wechat-900x383.jpg",
+    "vertical": "action-kv/channels/02-kv03-motion-every-pixel-vertical-9x16.jpg",
+    "wechat_size": "900×383",
+    "vertical_size": "1080×1920"
+  },
+  {
+    "slug": "03-ce09-your-display-story",
+    "title": "YOUR DISPLAY YOUR STORY · 创意无界",
+    "master": "action-kv/03-ce09-your-display-story.jpg",
+    "wechat": "action-kv/channels/03-ce09-your-display-story-wechat-900x383.jpg",
+    "vertical": "action-kv/channels/03-ce09-your-display-story-vertical-9x16.jpg",
+    "wechat_size": "900×383",
+    "vertical_size": "1080×1920"
+  },
+  {
+    "slug": "04-kv25-vertical-display",
+    "title": "POST YOUR VISION · 竖屏数字海报",
+    "master": "action-kv/04-kv25-vertical-display.jpg",
+    "wechat": "action-kv/channels/04-kv25-vertical-display-wechat-900x383.jpg",
+    "vertical": "action-kv/channels/04-kv25-vertical-display-vertical-9x16.jpg",
+    "wechat_size": "900×383",
+    "vertical_size": "1080×1920"
+  }
+]

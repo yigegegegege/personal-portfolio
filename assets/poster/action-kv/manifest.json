@@ -1,0 +1,116 @@
+[
+  {
+    "file": "action-kv/01-ce01-ultra-bright-clear.jpg",
+    "caption_zh": "ULTRA BRIGHT · 超亮超清",
+    "caption_en": "ULTRA BRIGHT · ULTRA CLEAR",
+    "featured": true
+  },
+  {
+    "file": "action-kv/02-kv03-motion-every-pixel.jpg",
+    "caption_zh": "MOTION IN EVERY PIXEL · 高刷性能",
+    "caption_en": "MOTION IN EVERY PIXEL · High Refresh",
+    "featured": true
+  },
+  {
+    "file": "action-kv/03-ce09-your-display-story.jpg",
+    "caption_zh": "YOUR DISPLAY YOUR STORY · 创意无界",
+    "caption_en": "YOUR DISPLAY · YOUR STORY",
+    "featured": true
+  },
+  {
+    "file": "action-kv/04-kv25-vertical-display.jpg",
+    "caption_zh": "POST YOUR VISION · 竖屏数字海报",
+    "caption_en": "POST YOUR VISION · Vertical Display",
+    "featured": true
+  },
+  {
+    "file": "action-kv/05-ce03-bright-as-daylight.jpg",
+    "caption_zh": "BRIGHT AS DAYLIGHT · 超高亮度",
+    "caption_en": "BRIGHT AS DAYLIGHT · Ultra-High Brightness",
+    "featured": false
+  },
+  {
+    "file": "action-kv/06-kv11-mountain-bike.jpg",
+    "caption_zh": "山地骑行 · 泥泞越野",
+    "caption_en": "Mountain Bike · Mud Action",
+    "featured": false
+  },
+  {
+    "file": "action-kv/07-kv14-kayak-rapids.jpg",
+    "caption_zh": "皮划艇 · 激流勇进",
+    "caption_en": "Kayak · Whitewater Rapids",
+    "featured": false
+  },
+  {
+    "file": "action-kv/08-ce04-cool-under-pressure.jpg",
+    "caption_zh": "COOL UNDER PRESSURE · 散热设计",
+    "caption_en": "COOL UNDER PRESSURE · Thermal Design",
+    "featured": false
+  },
+  {
+    "file": "action-kv/09-kv09-waterproof-splash.jpg",
+    "caption_zh": "防水溅射 · 户外防护",
+    "caption_en": "Waterproof · Splash Resistance",
+    "featured": false
+  },
+  {
+    "file": "action-kv/10-ce02-engineered-endure.jpg",
+    "caption_zh": "ENGINEERED TO ENDURE · 户外耐用",
+    "caption_en": "ENGINEERED TO ENDURE · Outdoor Hardware",
+    "featured": false
+  },
+  {
+    "file": "action-kv/11-kv01-rugged-reliability.jpg",
+    "caption_zh": "RUGGED RELIABILITY · 户外箱体",
+    "caption_en": "RUGGED RELIABILITY · Outdoor Cabinet",
+    "featured": false
+  },
+  {
+    "file": "action-kv/12-ce07-rugged-climbing.jpg",
+    "caption_zh": "RUGGED RELIABILITY · 攀岩场景",
+    "caption_en": "RUGGED RELIABILITY · Rock Climbing",
+    "featured": false
+  },
+  {
+    "file": "action-kv/13-kv16-think-bold.jpg",
+    "caption_zh": "THINK BOLD · 户外大屏",
+    "caption_en": "THINK BOLD · Outdoor Display",
+    "featured": false
+  },
+  {
+    "file": "action-kv/14-kv19-seamless-clarity.jpg",
+    "caption_zh": "SEAMLESS OUTDOOR CLARITY · 模组清晰",
+    "caption_en": "SEAMLESS OUTDOOR CLARITY · Modular LED",
+    "featured": false
+  },
+  {
+    "file": "action-kv/15-kv20-flip-chip-cob.jpg",
+    "caption_zh": "FLIP CHIP COB · 高端显示",
+    "caption_en": "FLIP CHIP COB · Fine Pitch Display",
+    "featured": false
+  },
+  {
+    "file": "action-kv/16-kv26-night-city-action.jpg",
+    "caption_zh": "都市夜景 · 动感跳跃",
+    "caption_en": "Night City · Dynamic Action",
+    "featured": false
+  },
+  {
+    "file": "action-kv/17-kv28-snowboard-sunset.jpg",
+    "caption_zh": "滑雪场景 · 日落高光",
+    "caption_en": "Snowboard · Golden Hour Action",
+    "featured": false
+  },
+  {
+    "file": "action-kv/18-kv05-mountain-hero.jpg",
+    "caption_zh": "雪山峰顶 · 产品特写",
+    "caption_en": "Mountain Peaks · Product Hero",
+    "featured": false
+  },
+  {
+    "file": "action-kv/19-ce10-alpine-product.jpg",
+    "caption_zh": "高山日出 · 工业质感",
+    "caption_en": "Alpine Sunrise · Pro Hardware",
+    "featured": false
+  }
+]

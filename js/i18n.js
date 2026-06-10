@@ -28,9 +28,19 @@
     const value = entry[lang] || entry.zh || "";
     if (el.hasAttribute("data-i18n-html")) {
       el.innerHTML = value;
-    } else {
-      el.textContent = value;
+      return;
     }
+
+    const hasTextChild = Array.from(el.childNodes).some(
+      (node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim()
+    );
+    if ((el.tagName === "BUTTON" || el.getAttribute("role") === "button") && !hasTextChild) {
+      el.setAttribute("aria-label", value);
+      el.setAttribute("title", value);
+      return;
+    }
+
+    el.textContent = value;
   }
 
   function applyAltAttributes(lang) {

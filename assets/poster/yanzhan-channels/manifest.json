@@ -1,0 +1,212 @@
+[
+  {
+    "slug": "01-stadium",
+    "title": "01 · SEE EVERY DETAIL · 夜间球场巨幕",
+    "master": "yanzhan-channels/01-stadium-master.jpg",
+    "wechat": "yanzhan-channels/01-stadium-wechat-900x383.jpg",
+    "square": "yanzhan-channels/01-stadium-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "03-concert",
+    "title": "03 · POWER THE MOMENT · 演唱会舞台",
+    "master": "yanzhan-channels/03-concert-master.jpg",
+    "wechat": "yanzhan-channels/03-concert-wechat-900x383.jpg",
+    "square": "yanzhan-channels/03-concert-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "04-cybercity",
+    "title": "04 · BRILLIANCE UNLEASHED · 赛博城市天台",
+    "master": "yanzhan-channels/04-cybercity-master.jpg",
+    "wechat": "yanzhan-channels/04-cybercity-wechat-900x383.jpg",
+    "square": "yanzhan-channels/04-cybercity-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "06-waterproof",
+    "title": "06 · WEATHER THE STORM · 暴雨防水",
+    "master": "yanzhan-channels/06-waterproof-master.jpg",
+    "wechat": "yanzhan-channels/06-waterproof-wechat-900x383.jpg",
+    "square": "yanzhan-channels/06-waterproof-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "07-desert",
+    "title": "07 · VISION WITHOUT LIMITS · 沙漠越野",
+    "master": "yanzhan-channels/07-desert-master.jpg",
+    "wechat": "yanzhan-channels/07-desert-wechat-900x383.jpg",
+    "square": "yanzhan-channels/07-desert-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "08-seamless",
+    "title": "08 · SEAMLESS BY DESIGN · 模块化拼接",
+    "master": "yanzhan-channels/08-seamless-master.jpg",
+    "wechat": "yanzhan-channels/08-seamless-wechat-900x383.jpg",
+    "square": "yanzhan-channels/08-seamless-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "09-beach",
+    "title": "09 · BRIGHT AS DAYLIGHT · 海滩日落",
+    "master": "yanzhan-channels/09-beach-master.jpg",
+    "wechat": "yanzhan-channels/09-beach-wechat-900x383.jpg",
+    "square": "yanzhan-channels/09-beach-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "11-mtb",
+    "title": "11 · RIDE THE EDGE · 山地车速降",
+    "master": "yanzhan-channels/11-mtb-master.jpg",
+    "wechat": "yanzhan-channels/11-mtb-wechat-900x383.jpg",
+    "square": "yanzhan-channels/11-mtb-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "13-forest",
+    "title": "13 · BRING NATURE TO LIFE · 森林巨屏",
+    "master": "yanzhan-channels/13-forest-master.jpg",
+    "wechat": "yanzhan-channels/13-forest-wechat-900x383.jpg",
+    "square": "yanzhan-channels/13-forest-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "14-flipchip",
+    "title": "14 · PIXEL PERFECT · 芯片微距特写",
+    "master": "yanzhan-channels/14-flipchip-master.jpg",
+    "wechat": "yanzhan-channels/14-flipchip-wechat-900x383.jpg",
+    "square": "yanzhan-channels/14-flipchip-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "15-arena",
+    "title": "15 · OWN THE ARENA · 体育馆赛事",
+    "master": "yanzhan-channels/15-arena-master.jpg",
+    "wechat": "yanzhan-channels/15-arena-wechat-900x383.jpg",
+    "square": "yanzhan-channels/15-arena-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "18-airport",
+    "title": "18 · YOUR DISPLAY YOUR STORY · 机场航站楼",
+    "master": "yanzhan-channels/18-airport-master.jpg",
+    "wechat": "yanzhan-channels/18-airport-wechat-900x383.jpg",
+    "square": "yanzhan-channels/18-airport-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "21-studio",
+    "title": "21 · BROADCAST WITH IMPACT · 电视演播室",
+    "master": "yanzhan-channels/21-studio-master.jpg",
+    "wechat": "yanzhan-channels/21-studio-wechat-900x383.jpg",
+    "square": "yanzhan-channels/21-studio-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "22-mall",
+    "title": "22 · CAPTIVATE EVERY VISITOR · 商场中庭巨屏",
+    "master": "yanzhan-channels/22-mall-master.jpg",
+    "wechat": "yanzhan-channels/22-mall-wechat-900x383.jpg",
+    "square": "yanzhan-channels/22-mall-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "23-highway",
+    "title": "23 · COMMAND EVERY MILE · 户外高速广告牌",
+    "master": "yanzhan-channels/23-highway-master.jpg",
+    "wechat": "yanzhan-channels/23-highway-wechat-900x383.jpg",
+    "square": "yanzhan-channels/23-highway-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "24-keynote",
+    "title": "24 · LAUNCH WITH IMPACT · 科技发布会",
+    "master": "yanzhan-channels/24-keynote-master.jpg",
+    "wechat": "yanzhan-channels/24-keynote-wechat-900x383.jpg",
+    "square": "yanzhan-channels/24-keynote-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "25-museum",
+    "title": "25 · EXPERIENCE THE STORY · 沉浸式展馆",
+    "master": "yanzhan-channels/25-museum-master.jpg",
+    "wechat": "yanzhan-channels/25-museum-wechat-900x383.jpg",
+    "square": "yanzhan-channels/25-museum-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "26-rooftop",
+    "title": "26 · DOMINATE THE SKYLINE · 城市天台幕墙",
+    "master": "yanzhan-channels/26-rooftop-master.jpg",
+    "wechat": "yanzhan-channels/26-rooftop-wechat-900x383.jpg",
+    "square": "yanzhan-channels/26-rooftop-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "27-transit",
+    "title": "27 · GUIDE EVERY JOURNEY · 高铁站候车厅",
+    "master": "yanzhan-channels/27-transit-master.jpg",
+    "wechat": "yanzhan-channels/27-transit-wechat-900x383.jpg",
+    "square": "yanzhan-channels/27-transit-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "28-esports",
+    "title": "28 · LEVEL UP THE ACTION · 电竞馆巨幕",
+    "master": "yanzhan-channels/28-esports-master.jpg",
+    "wechat": "yanzhan-channels/28-esports-wechat-900x383.jpg",
+    "square": "yanzhan-channels/28-esports-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  },
+  {
+    "slug": "30-install",
+    "title": "30 · INSTALL WITH CONFIDENCE · 工程吊装安装",
+    "master": "yanzhan-channels/30-install-master.jpg",
+    "wechat": "yanzhan-channels/30-install-wechat-900x383.jpg",
+    "square": "yanzhan-channels/30-install-square-900x900.jpg",
+    "master_size": "1920×1080",
+    "wechat_size": "900×383",
+    "square_size": "900×900"
+  }
+]

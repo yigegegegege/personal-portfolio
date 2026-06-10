@@ -316,5 +316,57 @@
 
   initHeroCarousel();
 
+  function initChannelExtendToggle() {
+    const block = document.querySelector(".channel-extend-block");
+    const btn = document.getElementById("channel-extend-toggle");
+    if (!block || !btn) return;
+
+    const expandLabel = btn.dataset.labelExpand || btn.textContent;
+    const collapseLabel = btn.dataset.labelCollapse || "收起";
+
+    btn.addEventListener("click", () => {
+      const expanded = block.classList.toggle("is-expanded");
+      btn.setAttribute("aria-expanded", expanded ? "true" : "false");
+      btn.textContent = expanded ? collapseLabel : expandLabel;
+      block.querySelectorAll(".channel-extend-set--more").forEach((el) => {
+        if (expanded) el.removeAttribute("hidden");
+        else el.setAttribute("hidden", "");
+      });
+    });
+  }
+
+  initChannelExtendToggle();
+
+  function initBackToTop() {
+    if (isHome) return;
+
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "back-to-top";
+    btn.id = "back-to-top";
+    btn.setAttribute("aria-label", "回到顶部");
+    btn.setAttribute("data-i18n", "common.backToTop");
+    btn.setAttribute("title", "回到顶部");
+    btn.innerHTML =
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>';
+
+    document.body.appendChild(btn);
+
+    const showOffset = Math.max(360, window.innerHeight * 0.6);
+
+    function updateVisibility() {
+      btn.classList.toggle("is-visible", window.scrollY > showOffset);
+    }
+
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+    updateVisibility();
+  }
+
+  initBackToTop();
+
   document.body.classList.remove("is-loading");
 })();
