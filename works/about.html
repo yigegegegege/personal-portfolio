@@ -163,6 +163,66 @@
       margin-top: 16px;
       line-height: 1.6;
     }
+    .motion-block {
+      padding-top: 28px;
+      margin-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .motion-block:first-of-type {
+      padding-top: 0;
+      margin-top: 0;
+      border-top: none;
+    }
+    .motion-block h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+      letter-spacing: 0.02em;
+    }
+    .motion-block__lead {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      line-height: 1.65;
+    }
+    .motion-video {
+      margin: 0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #000;
+    }
+    .motion-video video {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      background: #000;
+    }
+    .motion-stills {
+      display: grid;
+      gap: 14px;
+    }
+    @media (min-width: 700px) {
+      .motion-stills { grid-template-columns: repeat(3, 1fr); }
+    }
+    .motion-stills figure {
+      margin: 0;
+    }
+    .motion-stills img {
+      width: 100%;
+      border-radius: 12px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .motion-stills figcaption,
+    .motion-gifs figcaption {
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
   </style>
 </head>
 <body data-i18n-page="about">
@@ -199,23 +259,23 @@
     <a class="back" href="../index.html#section-about" data-i18n="common.backHome">← 返回首页</a>
     <p class="label">06 · About</p>
     <h1><span data-i18n="about.heroTitle">关于我</span></h1>
-    <p data-i18n="about.subtitle">谢意 · 视觉设计师 · 品牌视觉 / 新品上市视觉</p>
+    <p data-i18n="about.subtitle">谢意 · 视觉设计师 · 品牌视觉 / 独立站与官网 / 平面设计 / IP / 3D / AIGC</p>
   </header>
   <div class="about-grid">
     <article class="about-card about-card--wide about-intro">
       <h2 data-i18n="about.introTitle">个人简介</h2>
-        <p data-i18n="about.intro1" data-i18n-html>5 年品牌视觉（蓝普视讯 2021.06 至今），专注<strong style="color: var(--text); font-weight: 600;">新品与产品线上市视觉</strong>、品牌 VIS 与 IP 规范落地。作品集建议浏览顺序：<a href="../index.html#section-poster">品牌</a> → <a href="../index.html#section-product">产品</a> → <a href="../index.html#section-ip">IP</a> → <a href="../index.html#section-aigc">AIGC</a>。</p>
-      <p data-i18n="about.intro2">独立交付主 KV、电商主图与详情、画册/单页及 INFOCOMM、ISE 等国际展会展位视觉；与市场、销售、运营、开发协作完成官网上线与现场搭建对稿。</p>
-      <p data-i18n="about.intro3">熟练 PS、AI；AE/PR 做短片与活动包装；C4D/Blender 出产品渲染与方案场景图。</p>
-      <p data-i18n="about.intro4">2025 年起在品牌色与 IP 规范不变前提下，用「参考图 + Prompt 模板 + PS 审稿」做营销场景草图，加快提案迭代。</p>
-      <p data-i18n="about.intro5">2021 年度优秀员工。</p>
+      <p data-i18n="about.intro1">5 年品牌视觉设计经验（深圳蓝普视讯 2021.06 至今），主导 VIS 升级、品牌 IP「小蓝猫」体系及全触点视觉落地。</p>
+      <p data-i18n="about.intro2">独立完成活动主 KV、画册/折页/海报等平面设计完稿，以及亚马逊/阿里国际站主图与详情、公众号/视频号模板；负责品牌官网/独立站视觉与 CMS 运维，约 80% 版块配图由我产出。</p>
+      <p data-i18n="about.intro3">C4D/Blender 完成产品渲染与指挥大厅、会议、演播室、商显、交通、xR 等六大类方案场景图，服务销售提案与官网案例库。</p>
+      <p data-i18n="about.intro4">2025.05 起搭建「参考图 + Prompt 模板 + PS 审稿」AIGC 流程，缩短营销场景草图与提案物料周期。</p>
+      <p data-i18n="about.intro5">与市场、运营、开发协作推动 2022 全站重构上线、2025 视觉更新上线及 INFOCOMM/ISE 等国际展会主题视觉。</p>
     </article>
 
     <article class="about-card">
       <h2 data-i18n="about.infoTitle">基本信息</h2>
       <div class="info-row">
         <strong data-i18n="about.jobIntent">求职意向</strong>
-        <p data-i18n="about.jobIntentVal">视觉设计师 · 智能硬件 / 消费电子品牌视觉</p>
+        <p data-i18n="about.jobIntentVal">品牌视觉设计师 / 视觉设计师 / 高级视觉设计师</p>
       </div>
       <div class="info-row">
         <strong data-i18n="about.education">教育经历</strong>
@@ -288,49 +348,73 @@
         <h3 data-i18n="about.expLpTitle">深圳蓝普视讯科技有限公司 · 品牌视觉设计</h3>
         <p class="meta">2021.06 — 2026.05</p>
         <div class="exp-block">
-          <h4 data-i18n="about.expBlock1">新品上市与产品视觉</h4>
+          <h4 data-i18n="about.expBlock1">品牌 VIS、IP 与创意视觉</h4>
           <ul>
-            <li data-i18n="about.expLp1">按产品线定位整理版式与主色方向，独立完成主视觉、活动 KV、画册与单页完稿。</li>
-            <li data-i18n="about.expLp2">负责亚马逊、阿里国际站主图规范与详情页信息架构/版式，配合运营上新。</li>
-            <li data-i18n="about.expLp3">C4D/Blender 输出产品渲染及指挥大厅、会议、演播室、商显、交通、xR 等方案场景图，用于销售提案与官网案例。</li>
+            <li data-i18n="about.expLp1">作为品牌创意视觉主责，主导公司及子公司 VIS（Logo、主色 #0066FF、标准字、组合规范）规划与迭代。</li>
+            <li data-i18n="about.expLp2">参与 IP「小蓝猫 / XIAOLANMAO」多方案比选，以年轻化、潮流感形象定稿并编写应用规范；落地画册、展会 KV、自媒体模板、3D 屏显与周边。</li>
+            <li data-i18n="about.expLp3">改版产品画册、案例画册、彩页等核心平面设计物料，保证多触点视觉一致。</li>
           </ul>
         </div>
         <div class="exp-block">
-          <h4 data-i18n="about.expBlock2">品牌调性与视觉规范</h4>
+          <h4 data-i18n="about.expBlock2">数字阵地与电商视觉</h4>
           <ul>
-            <li data-i18n="about.expLp4">主导公司及子公司 VIS（Logo、主色 #0066FF、标准字、组合规范）及应用稿。</li>
-            <li data-i18n="about.expLp5">参与 IP「小蓝猫 / XIAOLANMAO」比选定稿，编写应用规范；落地画册、展会主 KV、自媒体模板、3D 屏显与周边。</li>
+            <li data-i18n="about.expLp4">负责品牌官网/独立站视觉策略与 CMS 内容运维（产品中心、解决方案、案例库）；2022 全站重构 + 2025 视觉更新上线，约 80% Banner/配图由我独立完成并交付。</li>
+            <li data-i18n="about.expLp5">制定亚马逊、阿里国际站主图规范与详情页信息架构/版式，配合运营上新节点交付与改稿。</li>
+            <li data-i18n="about.expLp6">独立完成折页、海报、主图/详情等平面设计完稿（PS/AI），按印刷与屏幕双渠道规范输出，协同开发完成页面上线。</li>
           </ul>
         </div>
         <div class="exp-block">
-          <h4 data-i18n="about.expBlock3">跨部门协作与项目落地</h4>
+          <h4 data-i18n="about.expBlock3">3D 渲染与方案场景</h4>
           <ul>
-            <li data-i18n="about.expLp6">2022 全站视觉重构、2025 视觉更新；2024.10—2025.03 独立运维 CMS（产品中心、解决方案、案例库），约 80% 版块配图由我交付，协同开发上线。</li>
-            <li data-i18n="about.expLp7">INFOCOMM、ISE、中东 SLS、LDI 等展会：主题 KV、展位效果图、主屏/吊屏版式与中英文产品墙排版，搭建前与结构图对稿。</li>
+            <li data-i18n="about.expLp7">C4D/Blender 完成室内外 LED 产品高精度渲染，用于画册、官网与销售提案。</li>
+            <li data-i18n="about.expLp8">搭建指挥大厅、演播室、会议、商业零售、交通显示、xR 虚拟拍摄等场景图库，与官网解决方案栏目对齐。</li>
+            <li data-i18n="about.expLp9">探索户外裸眼 3D 大屏创意构图，在官方 IP 规范内融入屏显内容创意。</li>
           </ul>
         </div>
         <div class="exp-block">
-          <h4 data-i18n="about.expBlock4">AIGC 创新应用</h4>
+          <h4 data-i18n="about.expBlock4">整合营销、展会与 AIGC</h4>
           <ul>
-            <li data-i18n="about.expLp8">2025.05 起建立中英文 Prompt 模板（含负向词、命名规范），即梦/ChatGPT 出图 + PS 终稿审稿。</li>
-            <li data-i18n="about.expLp9">用于 LED 场景营销草图、自媒体配图与周边示意，在合规前提下减少纯 3D 白模反复渲染。</li>
+            <li data-i18n="about.expLp10">主导 INFOCOMM、ISE、中东 SLS、LDI 等大型展会主题 KV、展位效果图及主屏/吊屏版式，搭建前与结构图对稿。</li>
+            <li data-i18n="about.expLp11">活动 KV 与自媒体模板结合潮流版式与品牌色做年轻化升级，适配公众号/视频号传播节奏；AE/PR 完成短片包装与校色。</li>
+            <li data-i18n="about.expLp12">2025.05 起建立中英文 Prompt 模板（含负向词、命名规范），即梦/ChatGPT 出图 + PS 终稿审稿，用于场景营销草图与自媒体配图。</li>
           </ul>
         </div>
       </div>
       <div class="exp-item exp-item--compact">
         <h3 data-i18n="about.expCrystal">深圳水晶石教育 · 影视后期与三维设计</h3>
         <p class="meta">2021.03 — 2021.06</p>
-        <p data-i18n="about.expCrystalDesc">MG/宣传片剪辑特效与校色（AE/PR）；《MIX FOLD》指定场景镜头、材质灯光与渲染。</p>
+        <p data-i18n="about.expCrystalDesc">MG/宣传片剪辑特效（AE/PR）；《MIX FOLD》指定场景镜头、材质灯光与渲染。</p>
       </div>
       <div class="exp-item exp-item--compact">
         <h3 data-i18n="about.expEarly">富甲一方 / 贝百教育 / 神农牡丹 · 平面与电商视觉</h3>
         <p class="meta">2020.04 — 2021.02</p>
-        <p data-i18n="about.expEarlyDesc">官网与电商 Banner/详情/画册；抖音、微信公众号视觉。</p>
+        <p data-i18n="about.expEarlyDesc">官网/活动 Banner、印刷物料；抖音、微信公众号视觉与短视频剪辑。</p>
       </div>
       <div class="exp-item exp-item--compact">
         <h3 data-i18n="about.expShifang">十方心理有限公司 · UI/UX 设计师（实习）</h3>
         <p class="meta">2018.11 — 2019.12</p>
-        <p data-i18n="about.expShifangDesc">《有爱心理》APP 界面与官网营销物料。</p>
+        <p data-i18n="about.expShifangDesc">《有爱心理》APP 全平台界面与官网营销物料。</p>
+      </div>
+    </article>
+
+    <article class="about-card about-card--wide" id="motion-featured">
+      <h2 data-i18n="about.motionTitle">Motion 精选</h2>
+      <p class="motion-block__lead" style="margin-bottom: 0;" data-i18n="about.motionDesc">水晶石实习期间两部代表性项目：三维产品宣传《MIX FOLD》与 MG 动效《About Korean》。</p>
+
+      <div class="motion-block">
+        <h3 data-i18n="about.motionMixTitle">《MIX FOLD》</h3>
+        <p class="motion-block__lead" data-i18n="about.motionMixDesc">深圳水晶石教育 · 2021.04—2021.05。产品宣传短片：场景建模、材质灯光与渲染；AE/PR 参与剪辑校色。</p>
+        <figure class="motion-video">
+          <video src="../assets/motion/mix-fold.mp4" controls playsinline preload="metadata" aria-label="MIX FOLD 产品宣传短片"></video>
+        </figure>
+      </div>
+
+      <div class="motion-block">
+        <h3 data-i18n="about.motionKoreanTitle">《About Korean》· MG 动效</h3>
+        <p class="motion-block__lead" data-i18n="about.motionKoreanDesc">AE 完成镜头动画、图形节奏与字幕包装，输出 MG 宣传短片。</p>
+        <figure class="motion-video">
+          <video src="../assets/motion/about-korean.mp4" controls playsinline preload="metadata" aria-label="About Korean MG 动效短片"></video>
+        </figure>
       </div>
     </article>
 
@@ -343,44 +427,57 @@
           <figcaption>户外徒步 · 黄金时刻构图参考</figcaption>
         </figure>
         <figure>
-          <img src="../assets/product/ecom/main/a-960x600-01.jpg" alt="电商户外场景主图" loading="lazy" />
-          <figcaption>商业视觉 · 户外场景主图（露营风扇品类）</figcaption>
+          <img src="../assets/photo/commercial-visual-display.png" alt="立式数字海报屏 · 海滨黄金时刻场景" loading="lazy" />
+          <figcaption data-i18n="about.photoCommercialCap">商业视觉 · 立式数字海报屏场景渲染（海滨黄金时刻）</figcaption>
         </figure>
       </div>
     </article>
 
     <article class="about-card about-card--wide">
-      <h2 data-i18n="about.projectsTitle">代表项目</h2>
+      <h2 data-i18n="about.projectsTitle">项目经历</h2>
       <div class="exp-item">
-        <h3 data-i18n="about.proj1Title">LPDISPLAY 品牌 VI 升级与 IP「小蓝猫」</h3>
-        <p class="meta">2022.04 — 2022.07（VI 迭代至今） · <a href="poster.html#col-vi">查看作品</a></p>
+        <h3 data-i18n="about.proj1Title">LPDISPLAY 品牌 VI 升级与 IP「小蓝猫」体系</h3>
+        <p class="meta" data-i18n="about.proj1Meta">2022.04 — 至今 · 项目角色：创意视觉设计师 · VIS 主导 · <a href="poster.html#col-vi">查看作品</a></p>
         <ul>
-          <li>Logo 多方案比选与 VI 基础系统（标识、标准字、#0066FF、组合规范）及应用（名片、工牌、导视）。</li>
-          <li>IP 方案采纳为核心资产，写入品牌手册；画册、彩页、展会、自媒体统一改版。</li>
+          <li data-i18n="about.proj1Bg" data-i18n-html><strong>背景：</strong>配合品牌国际化，启动 Logo、VIS 及 IP 全面升级。</li>
+          <li data-i18n="about.proj1Duty" data-i18n-html><strong>职责：</strong>Logo 多方案比选；输出 VI 基础/应用系统及画册、彩页、名片等平面设计规范；IP「小蓝猫」年轻化方案获采纳为核心资产。</li>
+          <li data-i18n="about.proj1Result" data-i18n-html><strong>成果：</strong>建立可复用品牌手册与 IP 应用规范，统一画册、展会、电商、自媒体输出，提升品牌潮流感与记忆点。</li>
         </ul>
       </div>
       <div class="exp-item">
-        <h3 data-i18n="about.proj2Title">官网视觉升级与 CMS 重构</h3>
-        <p class="meta">2022.04 — 2026.04 · <a href="poster.html#col-banner">品牌 KV</a> · <a href="product.html#col-ecom">跨境电商</a></p>
+        <h3 data-i18n="about.proj2Title">品牌官网/独立站视觉升级与 CMS 内容体系重构</h3>
+        <p class="meta" data-i18n="about.proj2Meta" data-i18n-html>2022.04 — 2026.04 · 项目角色：视觉设计 · 主责 · <a href="poster.html#col-banner">品牌 KV</a> · <a href="product.html#col-ecom">跨境电商</a></p>
         <ul>
-          <li>2022.07 定稿 B2B 全站风格，我交付约 80% Banner/图标/版块配图，按 VI 协同开发上线。</li>
-          <li>2024.10—2025.03 调整公司介绍、产品中心、解决方案、案例库栏目结构与配图。</li>
+          <li data-i18n="about.proj2Bg" data-i18n-html><strong>背景：</strong>原官网/独立站信息架构陈旧，需对齐 B2B 专业调性并支撑业务展示。</li>
+          <li data-i18n="about.proj2Duty" data-i18n-html><strong>职责：</strong>2022.07 定稿全站风格；独立完成 Banner、图标、版块配图等平面设计交付（约 80%），协同开发完成页面上线；2024.10—2025.03 重构产品中心、解决方案、案例库栏目。</li>
+          <li data-i18n="about.proj2Result" data-i18n-html><strong>成果：</strong>新版官网/独立站成功上线，核心栏目内容完整度显著提升，成为销售与客户了解品牌的首要入口。</li>
         </ul>
       </div>
       <div class="exp-item">
-        <h3 data-i18n="about.proj3Title">国际展会主题视觉与展位</h3>
-        <p class="meta">2022.06 — 2026.01 · <a href="poster.html#col-case-study">查看作品</a></p>
+        <h3 data-i18n="about.proj3Title">国际行业展会主题视觉与展位设计</h3>
+        <p class="meta" data-i18n="about.proj3Meta">2022.06 — 2026.01 · 项目角色：主视觉设计师 · 创意视觉 · <a href="poster.html#col-case-study">查看作品</a></p>
         <ul>
-          <li>ISE（2024—2026）、INFOCOMM（2023—2025）、中东 SLS（2025—2026）等：深灰结构 + 品牌色点缀。</li>
-          <li>产品墙含会议屏、租赁屏、Flip Chip COB 等分区，中英文参数表排版，效果图供搭建参考。</li>
+          <li data-i18n="about.proj3Bg" data-i18n-html><strong>背景：</strong>海外市场拓展需统一、高辨识度的展台视觉体系。</li>
+          <li data-i18n="about.proj3Duty" data-i18n-html><strong>职责：</strong>ISE（2024—2026）、INFOCOMM（2023—2025）、中东 SLS（2025—2026）等方案视觉；展位结构、主屏/吊屏版式、产品墙与中英文参数排版。</li>
+          <li data-i18n="about.proj3Result" data-i18n-html><strong>成果：</strong>多套方案投入现场搭建，保障海内外展会品牌露出一致性，支撑海外市场拓展。</li>
         </ul>
       </div>
       <div class="exp-item">
-        <h3 data-i18n="about.proj4Title">品牌 IP · AIGC 视觉工作流</h3>
-        <p class="meta">2025.05 — 2026.04 · <a href="aigc.html">查看作品</a></p>
+        <h3 data-i18n="about.proj4Title">LED 产品 3D 渲染与解决方案场景可视化</h3>
+        <p class="meta" data-i18n="about.proj4Meta">2022 — 2026 · 项目角色：3D 视觉设计 · 独立负责 · <a href="scene.html">查看作品</a></p>
         <ul>
-          <li>固定小蓝猫外形与品牌色，归档 Prompt 模板与试生成记录。</li>
-          <li>输出场景营销草图与周边示意，终稿经 PS 与品牌审稿后进入提案/自媒体。</li>
+          <li data-i18n="about.proj4Bg" data-i18n-html><strong>背景：</strong>销售与市场需高质量场景图支撑提案，纯摄影成本高、迭代慢。</li>
+          <li data-i18n="about.proj4Duty" data-i18n-html><strong>职责：</strong>产品线高精度材质灯光渲染；搭建六大类应用场景 3D 图库并与官网案例库对齐。</li>
+          <li data-i18n="about.proj4Result" data-i18n-html><strong>成果：</strong>形成可复用场景图库，缩短销售与市场部门物料制作周期，支撑多产品线提案。</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <h3 data-i18n="about.proj5Title">品牌 IP · AIGC 视觉资产工作流</h3>
+        <p class="meta" data-i18n="about.proj5Meta">2025.05 — 2026.04 · 项目角色：品牌视觉设计 · 流程搭建与执行 · <a href="aigc.html">查看作品</a></p>
+        <ul>
+          <li data-i18n="about.proj5Bg" data-i18n-html><strong>背景：</strong>营销提案与自媒体配图需求增长，需在 IP 合规前提下提效。</li>
+          <li data-i18n="about.proj5Duty" data-i18n-html><strong>职责：</strong>建立 Prompt 模板、负向词库与试生成归档；即梦/ChatGPT 出图 + PS 终稿审稿。</li>
+          <li data-i18n="about.proj5Result" data-i18n-html><strong>成果：</strong>形成「设计规范 → Prompt → 生成 → 审稿」闭环，降低纯 3D 试错成本，为提案与自媒体提供快速视觉草案。</li>
         </ul>
       </div>
     </article>
